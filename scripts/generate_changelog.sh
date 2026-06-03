@@ -1,5 +1,5 @@
 #!/bin/bash
-# Changelog generation script for Uzima-Contracts
+# Changelog generation script for VitaStellar-Contracts
 # Usage: ./scripts/generate_changelog.sh [OPTIONS]
 
 set -euo pipefail
@@ -314,7 +314,7 @@ validate_git_state() {
 # Help function
 show_help() {
     cat << EOF
-Changelog generation script for Uzima-Contracts
+Changelog generation script for VitaStellar-Contracts
 
 Usage:
     $0 [OPTIONS]

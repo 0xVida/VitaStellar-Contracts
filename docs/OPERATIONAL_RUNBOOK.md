@@ -1,6 +1,6 @@
 # Operational Runbook
 
-This runbook covers common operational tasks for Uzima Contracts in production.
+This runbook covers common operational tasks for VitaStellar Contracts in production.
 
 ---
 

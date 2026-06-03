@@ -1,7 +1,7 @@
 # Naming Inconsistencies Fixes - Summary
 
 ## Overview
-This document summarizes the naming inconsistency fixes applied to the Uzima Contracts project.
+This document summarizes the naming inconsistency fixes applied to the VitaStellar Contracts project.
 
 ## Issues Found and Fixed
 

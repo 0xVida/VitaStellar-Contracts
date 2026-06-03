@@ -1,6 +1,6 @@
-# Uzima-Contracts Deployment Guide
+# VitaStellar-Contracts Deployment Guide
 
-This comprehensive guide covers deploying Uzima-Contracts smart contracts across different environments using the enhanced network configuration management system.
+This comprehensive guide covers deploying VitaStellar-Contracts smart contracts across different environments using the enhanced network configuration management system.
 
 ## Table of Contents
 
@@ -43,8 +43,8 @@ soroban --version
 
 ```bash
 # Clone the repository
-git clone https://github.com/Stellar-Uzima/Uzima-Contracts.git
-cd Uzima-Contracts
+git clone https://github.com/Stellar-VitaStellar/VitaStellar-Contracts.git
+cd VitaStellar-Contracts
 
 # Install dependencies
 make install-deps

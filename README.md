@@ -1,8 +1,16 @@
-# 🌟 Stellar Uzima - Decentralized Medical Records on Stellar
+# 🌟 VitaStellar - Decentralized Health & Wellness Powered by Stellar
 
-Stellar Uzima is a decentralized smart contract system for secure, encrypted, and role-based management of medical records on the Stellar blockchain using Soroban and Rust. The project enables healthcare providers and patients to maintain control over sensitive medical data while ensuring privacy, immutability, and auditability. Built specifically for healthcare organizations transitioning to blockchain-based record keeping, the system also respects traditional healing practices by supporting metadata for indigenous medical records.
+> **Decentralized Health & Wellness Powered by Stellar**
 
-The platform provides a comprehensive solution for modern healthcare data management, combining the security benefits of blockchain technology with practical healthcare workflows. It's designed for hospitals, clinics, research institutions, and healthcare providers who need to maintain patient confidentiality while enabling secure data sharing between authorized parties.
+VitaStellar is a decentralized health and wellness platform built on the Stellar ecosystem. The platform enables users to track health goals, manage wellness activities, receive personalized insights, and maintain ownership of health-related data through secure and transparent blockchain infrastructure.
+
+Built on Soroban smart contracts for the Stellar blockchain, VitaStellar provides a comprehensive suite of smart contracts for:
+- Health goal tracking and wellness habit management
+- Patient-controlled medical records with role-based access
+- Wellness achievements and incentive programs
+- Secure, encrypted on-chain data storage
+- Decentralized governance and audit trails
+- Community health initiatives
 
 ---
 
@@ -34,7 +42,7 @@ The platform provides a comprehensive solution for modern healthcare data manage
 
 ## 🎯 Project Overview
 
-Stellar Uzima transforms medical record management by leveraging Stellar's blockchain infrastructure to create an immutable, secure, and patient-centric healthcare data ecosystem. The system addresses critical healthcare challenges including data breaches, interoperability issues, and patient privacy concerns through cryptographic security and decentralized governance.
+VitaStellar transforms medical record management by leveraging Stellar's blockchain infrastructure to create an immutable, secure, and patient-centric healthcare data ecosystem. The system addresses critical healthcare challenges including data breaches, interoperability issues, and patient privacy concerns through cryptographic security and decentralized governance.
 
 **Key Benefits:**
 - **Enhanced Security**: Military-grade encryption protects sensitive medical data
@@ -81,8 +89,8 @@ Get up and running in under 5 minutes:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-org/Uzima-Contracts.git
-cd Uzima-Contracts
+git clone https://github.com/your-org/VitaStellar-Contracts.git
+cd VitaStellar-Contracts
 
 # Run the automated setup script
 chmod +x setup.sh
@@ -247,7 +255,7 @@ See [docs/CLI_GUIDE.md](docs/CLI_GUIDE.md) for advanced transaction management c
 ## 🏗️ Project Structure
 
 ```
-Uzima-Contracts/
+VitaStellar-Contracts/
 │
 ├── contracts/
 │   └── medical_records/
@@ -362,10 +370,10 @@ For production deployment on Stellar Mainnet:
 
 ```bash
 # Build production Docker image
-docker build -t uzima-contracts .
+docker build -t vitastellar-contracts .
 
 # Deploy using Docker
-docker run -it --rm -v $(PWD):/workspace uzima-contracts \
+docker run -it --rm -v $(PWD):/workspace vitastellar-contracts \
   make build-opt deploy-mainnet
 ```
 
@@ -638,7 +646,7 @@ deployments/
 - **Invalid backup**: Backup file may be corrupted
 - **Contract not found**: Backup contract may have been removed
 
-For more help, check the [GitHub Issues](https://github.com/your-org/Uzima-Contracts/issues) or [Discussions](https://github.com/your-org/Uzima-Contracts/discussions).
+For more help, check the [GitHub Issues](https://github.com/your-org/VitaStellar-Contracts/issues) or [Discussions](https://github.com/your-org/VitaStellar-Contracts/discussions).
 
 ---
 
@@ -674,12 +682,12 @@ We welcome contributions from the community! Please follow these guidelines to e
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/your-username/Uzima-Contracts.git
-   cd Uzima-Contracts
+   git clone https://github.com/your-username/VitaStellar-Contracts.git
+   cd VitaStellar-Contracts
    ```
 3. **Add upstream remote**:
    ```bash
-   git remote add upstream https://github.com/original-org/Uzima-Contracts.git
+   git remote add upstream https://github.com/original-org/VitaStellar-Contracts.git
    ```
 
 ### Development Workflow
@@ -752,7 +760,7 @@ A contribution is complete when:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-**Copyright © 2025 Stellar Uzima Contributors**
+**Copyright © 2025 VitaStellar Contributors**
 
 ---
 
@@ -840,8 +848,8 @@ soroban contract invoke --id <CONTRACT_ID> --network local \
 If you encounter issues not covered here:
 
 1. **Check the logs**: Look at the full error output
-2. **Search existing issues**: Check [GitHub Issues](https://github.com/Stellar-Uzima/Uzima-Contracts/issues)
-3. **Ask for help**: Start a [GitHub Discussion](https://github.com/Stellar-Uzima/Uzima-Contracts/discussions)
+2. **Search existing issues**: Check [GitHub Issues](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues)
+3. **Ask for help**: Start a [GitHub Discussion](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/discussions)
 4. **Join our community**: Connect with other developers
 
 ---
@@ -850,8 +858,8 @@ If you encounter issues not covered here:
 
 ### General Questions
 
-**Q: What is Stellar Uzima?**
-A: Stellar Uzima is a decentralized medical records system built on the Stellar blockchain that enables secure, patient-controlled healthcare data management.
+**Q: What is VitaStellar?**
+A: VitaStellar is a decentralized health and wellness platform built on the Stellar ecosystem that empowers individuals to manage health goals, track wellness activities, maintain ownership of health-related data, and participate in blockchain-powered wellness incentive programs.
 
 **Q: Why use blockchain for medical records?**
 A: Blockchain provides immutability, security, audit trails, and patient control over data access - all critical for healthcare data.
@@ -899,8 +907,8 @@ A: All sensitive medical data is encrypted before storage, and access is control
 
 ## 🆘 Support
 
-- **Issues**: [GitHub Issues](https://github.com/your-org/Uzima-Contracts/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/your-org/Uzima-Contracts/discussions)
+- **Issues**: [GitHub Issues](https://github.com/your-org/VitaStellar-Contracts/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/your-org/VitaStellar-Contracts/discussions)
 - **Documentation**: [Project Docs](./docs/)
 
 ---

@@ -22,7 +22,7 @@
    - Error codes
    - Performance guidelines
 
-3. **[Uzima Analytics Platform](ANALYTICS_PLATFORM.md)**
+3. **[VitaStellar Analytics Platform](ANALYTICS_PLATFORM.md)**
    - Contract- and script-level analytics
    - Cross-institution dashboards and KPIs
    - Privacy-preserving aggregation strategies
@@ -359,7 +359,7 @@ pause()/resume()                   - Emergency controls
 ## 🗂️ File Structure
 
 ```
-Uzima-Contracts/docs/
+VitaStellar-Contracts/docs/
 ├── HEALTHCARE_INTEGRATION_DELIVERY.md      ⭐ START HERE
 ├── HEALTHCARE_QUICK_REFERENCE.md           (Useful commands)
 ├── HEALTHCARE_INTEGRATION.md               (Complete guide)
@@ -367,16 +367,16 @@ Uzima-Contracts/docs/
 ├── HEALTHCARE_INTEGRATION_SUMMARY.md       (Implementation summary)
 └── HEALTHCARE_INTEGRATION_INDEX.md         (This file)
 
-Uzima-Contracts/contracts/
+VitaStellar-Contracts/contracts/
 ├── fhir_integration/src/lib.rs            (550+ lines)
 ├── emr_integration/src/lib.rs             (550+ lines)
 └── healthcare_data_conversion/src/lib.rs  (450+ lines)
 
-Uzima-Contracts/scripts/
+VitaStellar-Contracts/scripts/
 ├── deploy_healthcare_integration.sh        (Deployment)
 └── healthcare_integration_test.sh          (Testing)
 
-Uzima-Contracts/tests/
+VitaStellar-Contracts/tests/
 └── healthcare_real_world_scenarios.sh      (Real-world tests)
 ```
 

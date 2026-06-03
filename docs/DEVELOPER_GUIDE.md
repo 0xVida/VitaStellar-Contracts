@@ -1,6 +1,6 @@
-# Uzima Contracts Developer Guide
+# VitaStellar Contracts Developer Guide
 
-Comprehensive guidance for developers building, integrating, deploying, and maintaining Uzima smart contracts.
+Comprehensive guidance for developers building, integrating, deploying, and maintaining VitaStellar smart contracts.
 
 ## Table of Contents
 1. [API Reference](#api-reference)

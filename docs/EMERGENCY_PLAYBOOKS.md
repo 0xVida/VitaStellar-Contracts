@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document contains detailed emergency playbooks for the Uzima Contract Governance System. These playbooks provide step-by-step procedures for responding to various emergency situations, including smart contract exploits, key compromises, governance attacks, and market crashes.
+This document contains detailed emergency playbooks for the VitaStellar Contract Governance System. These playbooks provide step-by-step procedures for responding to various emergency situations, including smart contract exploits, key compromises, governance attacks, and market crashes.
 
 ## Table of Contents
 

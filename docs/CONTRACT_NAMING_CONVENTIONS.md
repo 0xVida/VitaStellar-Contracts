@@ -1,6 +1,6 @@
 # Contract Naming Conventions
 
-Standardized naming conventions for Uzima smart contracts to ensure consistency across the codebase.
+Standardized naming conventions for VitaStellar smart contracts to ensure consistency across the codebase.
 
 ## Table of Contents
 1. [Contract Naming](#contract-naming)

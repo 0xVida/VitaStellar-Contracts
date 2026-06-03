@@ -197,7 +197,7 @@ fn test_insurance_eligibility_claim_submission_and_eob_flow() {
 
     let insurance_provider_id = client.register_insurance_provider(
         &admin,
-        &String::from_str(&env, "Uzima Insurance"),
+        &String::from_str(&env, "VitaStellar Insurance"),
         &String::from_str(&env, "UZM001"),
         &true,
         &true,
@@ -287,7 +287,7 @@ fn test_insurance_claim_requires_matching_policy() {
 
     let insurance_provider_id = client.register_insurance_provider(
         &admin,
-        &String::from_str(&env, "Uzima Insurance"),
+        &String::from_str(&env, "VitaStellar Insurance"),
         &String::from_str(&env, "UZM002"),
         &true,
         &true,

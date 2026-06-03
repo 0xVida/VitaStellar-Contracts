@@ -1,7 +1,7 @@
-# Uzima Contracts Coding Standards
+# VitaStellar Contracts Coding Standards
 
 ## Overview
-This document defines the coding standards and naming conventions for all Uzima smart contracts. Consistent naming patterns improve code readability, maintainability, and developer experience.
+This document defines the coding standards and naming conventions for all VitaStellar smart contracts. Consistent naming patterns improve code readability, maintainability, and developer experience.
 
 ## Naming Conventions
 

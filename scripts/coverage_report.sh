@@ -13,7 +13,7 @@ COVERAGE_THRESHOLD=90
 # Create coverage directory
 mkdir -p "${COVERAGE_DIR}"
 
-echo "=== Uzima Contracts - Coverage Report Generator ==="
+echo "=== VitaStellar Contracts - Coverage Report Generator ==="
 echo ""
 
 # Check if tarpaulin is installed

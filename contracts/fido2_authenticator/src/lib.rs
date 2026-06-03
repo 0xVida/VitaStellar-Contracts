@@ -202,7 +202,7 @@ pub enum DataKey {
     IdentityRegistry,
     /// Optional: address of the ZK verifier contract (required for ES256).
     ZkVerifier,
-    /// SHA-256 of the relying party ID string (e.g., `sha256("uzima.health")`).
+    /// SHA-256 of the relying party ID string (e.g., `sha256("vitastellar.health")`).
     RpIdHash,
     /// All registered devices for a user (active + revoked).
     UserDevices(Address),
@@ -292,7 +292,7 @@ impl Fido2AuthenticatorContract {
     ///
     /// * `admin`      — address authorised to call administrative functions.
     /// * `rp_id_hash` — SHA-256 of the relying party identifier string
-    ///                  (e.g., `sha256(b"uzima.health")`).
+    ///                  (e.g., `sha256(b"vitastellar.health")`).
     pub fn initialize(env: Env, admin: Address, rp_id_hash: BytesN<32>) -> Result<(), Error> {
         admin.require_auth();
         if env.storage().instance().has(&DataKey::Initialized) {
@@ -1023,7 +1023,7 @@ mod tests {
 
     // ─────────────────────────── Test helpers ────────────────────────────────
 
-    /// SHA-256 of the ASCII string "uzima.health" — used as the test RP ID hash.
+    /// SHA-256 of the ASCII string "vitastellar.health" — used as the test RP ID hash.
     const TEST_RP_ID_HASH: [u8; 32] = [
         0x27, 0x08, 0x6a, 0x75, 0x68, 0x88, 0xde, 0x5c, 0xd7, 0x93, 0x04, 0x4d, 0x4b, 0x79, 0x3c,
         0x21, 0x4a, 0x4e, 0x8c, 0x7c, 0x86, 0xc3, 0xd4, 0x7e, 0x36, 0xaf, 0xbc, 0xd3, 0x3e, 0x0b,

@@ -1,4 +1,4 @@
-# Uzima Contracts — Error Code Reference
+# VitaStellar Contracts — Error Code Reference
 
 > **Last updated:** 2026-05-30  
 > **Soroban SDK:** v23.x  

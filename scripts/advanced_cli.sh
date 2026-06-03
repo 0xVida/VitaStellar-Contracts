@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Advanced CLI for Uzima Contracts
+# Advanced CLI for VitaStellar Contracts
 # Adds transaction history, batch operations, debugging, and account utilities
 
 set -euo pipefail
@@ -38,7 +38,7 @@ validate_network() {
 
 show_help() {
     cat <<EOF
-Advanced Uzima CLI
+Advanced VitaStellar CLI
 
 Usage:
   $0 <command> [args...]

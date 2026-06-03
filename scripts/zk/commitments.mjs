@@ -45,7 +45,7 @@ async function main() {
   });
 
   const artifact = {
-    schema: "uzima.zk.commitments.v1",
+    schema: "vitastellar.zk.commitments.v1",
     generated_at: new Date().toISOString(),
     record_commitment: computeRecordCommitment(record),
     credential_commitment: computeCredentialCommitment(credential),

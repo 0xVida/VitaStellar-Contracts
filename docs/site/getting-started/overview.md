@@ -1,6 +1,6 @@
 # Overview
 
-Stellar Uzima transforms medical record management by leveraging Stellar's blockchain infrastructure to create an immutable, secure, and patient-centric healthcare data ecosystem.
+VitaStellar transforms medical record management by leveraging Stellar's blockchain infrastructure to create an immutable, secure, and patient-centric healthcare data ecosystem.
 
 ## Key Benefits
 

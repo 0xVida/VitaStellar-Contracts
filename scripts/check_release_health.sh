@@ -1,5 +1,5 @@
 #!/bin/bash
-# Release health check script for Uzima-Contracts
+# Release health check script for VitaStellar-Contracts
 # Usage: ./scripts/check_release_health.sh VERSION
 
 set -euo pipefail
@@ -88,7 +88,7 @@ check_artifact_integrity() {
     
     log_info "Checking artifact integrity..."
     
-    local artifacts_dir="$PROJECT_ROOT/artifacts/uzima-contracts-v$version"
+    local artifacts_dir="$PROJECT_ROOT/artifacts/vitastellar-contracts-v$version"
     
     if [[ ! -d "$artifacts_dir" ]]; then
         log_error "Artifacts directory not found: $artifacts_dir"
@@ -406,7 +406,7 @@ send_health_alert() {
     
     log_info "Sending health alert..."
     
-    local message="🏥 Release Health Alert - Uzima-Contracts v$version
+    local message="🏥 Release Health Alert - VitaStellar-Contracts v$version
 
 Status: $status
 Errors: $HEALTH_ERRORS
@@ -467,7 +467,7 @@ perform_health_check() {
 # Help function
 show_help() {
     cat << EOF
-Release health check script for Uzima-Contracts
+Release health check script for VitaStellar-Contracts
 
 Usage:
     $0 VERSION [OPTIONS]

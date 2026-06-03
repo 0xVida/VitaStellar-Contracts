@@ -1,4 +1,4 @@
-/// Property-based tests for Uzima Contracts
+/// Property-based tests for VitaStellar Contracts
 ///
 /// Covers top 10 critical contracts by financial/criticality impact:
 /// 1. medical_records - core patient data

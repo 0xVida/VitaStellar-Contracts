@@ -32,4 +32,4 @@ Built-in recovery procedures for lost factors:
 - **Scalable State**: Uses persistent storage for factor configurations.
 
 ## Integration
-- Can be used by other Uzima contracts via the `is_authenticated` cross-contract call.
+- Can be used by other VitaStellar contracts via the `is_authenticated` cross-contract call.

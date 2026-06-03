@@ -1,10 +1,10 @@
 # Contract API Stability Guarantees
 
-This document defines the API stability guarantees for Uzima smart contracts. It is intended for developers, integrators, and operators who rely on contract entrypoints, event schemas, and upgrade paths.
+This document defines the API stability guarantees for VitaStellar smart contracts. It is intended for developers, integrators, and operators who rely on contract entrypoints, event schemas, and upgrade paths.
 
 ## Purpose
 
-Uzima Contracts uses contract APIs as the foundation for secure, auditable healthcare workflows. This page explains:
+VitaStellar Contracts uses contract APIs as the foundation for secure, auditable healthcare workflows. This page explains:
 
 - Stability levels for contract APIs
 - Breaking change policies
@@ -48,7 +48,7 @@ Characteristics:
 
 ## Breaking Change Policy
 
-Uzima Contracts follows a predictable policy for breaking changes:
+VitaStellar Contracts follows a predictable policy for breaking changes:
 
 1.  **Major version bump for breaking changes**
     - Any change that alters public function signatures, event formats, or storage semantics in a way that invalidates existing clients is treated as a major breaking change.

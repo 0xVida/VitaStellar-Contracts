@@ -717,11 +717,11 @@ soroban contract deploy \
 For technical support, regulatory questions, or integration assistance:
 - Documentation: `/docs/PHARMA_SUPPLY_CHAIN.md`
 - Issues: GitHub Issues
-- Email: support@uzima-healthcare.com
+- Email: support@vitastellar-healthcare.com
 
 ## License
 
-Copyright © 2024 Uzima Healthcare. All rights reserved.
+Copyright © 2024 VitaStellar Healthcare. All rights reserved.
 
 ---
 

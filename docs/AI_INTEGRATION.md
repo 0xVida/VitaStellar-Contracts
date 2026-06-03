@@ -2,9 +2,9 @@
 
 ## Overview
 
-This document outlines the AI/ML capabilities integrated into the Uzima Healthcare Platform. The system provides privacy-preserving machine learning for medical record analysis while maintaining patient privacy and regulatory compliance.
+This document outlines the AI/ML capabilities integrated into the VitaStellar Healthcare Platform. The system provides privacy-preserving machine learning for medical record analysis while maintaining patient privacy and regulatory compliance.
 
-For details on how these AI signals are surfaced in dashboards and analytics tooling, see the [Uzima Analytics Platform](ANALYTICS_PLATFORM.md).
+For details on how these AI signals are surfaced in dashboards and analytics tooling, see the [VitaStellar Analytics Platform](ANALYTICS_PLATFORM.md).
 
 ## Architecture
 

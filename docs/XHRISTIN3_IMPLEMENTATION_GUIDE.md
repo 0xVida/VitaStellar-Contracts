@@ -9,10 +9,10 @@
 
 | Issue | Title | Labels |
 |-------|-------|--------|
-| [#397](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/397) | Implement upgrade testing framework | testing, upgradeability, infrastructure |
-| [#418](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/418) | Implement comprehensive API versioning strategy | api-design, enhancement, upgradeability |
-| [#420](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/420) | Implement proper test coverage reporting | ci-cd, testing, quality-metrics |
-| [#422](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/422) | Implement comprehensive disaster recovery procedures | disaster-recovery, enhancement, operations |
+| [#397](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/397) | Implement upgrade testing framework | testing, upgradeability, infrastructure |
+| [#418](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/418) | Implement comprehensive API versioning strategy | api-design, enhancement, upgradeability |
+| [#420](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/420) | Implement proper test coverage reporting | ci-cd, testing, quality-metrics |
+| [#422](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/422) | Implement comprehensive disaster recovery procedures | disaster-recovery, enhancement, operations |
 
 ---
 

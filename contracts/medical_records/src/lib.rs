@@ -1,6 +1,6 @@
 //! # Medical Records Contract
 //!
-//! Core medical records management contract for the Uzima healthcare platform.
+//! Core medical records management contract for the VitaStellar healthcare platform.
 //! Provides on-chain medical record storage with fine-grained access control,
 //! encryption support, cross-chain sync, and AI integration capabilities.
 //!

@@ -1,6 +1,6 @@
 # Treasury Controller - Multi-Sig Compatible
 
-A comprehensive treasury management system with multisig approval workflows and Gnosis Safe compatibility for the Uzima ecosystem.
+A comprehensive treasury management system with multisig approval workflows and Gnosis Safe compatibility for the VitaStellar ecosystem.
 
 ## Overview
 
@@ -347,7 +347,7 @@ client.gnosis_execute_proposal(&proposal_id, &signatures)?;
 
 ## Integration with Existing Contracts
 
-The Treasury Controller integrates seamlessly with the Uzima ecosystem:
+The Treasury Controller integrates seamlessly with the VitaStellar ecosystem:
 
 - **SUT Token**: Native token management and transfers
 - **Token Sale**: Treasury funding from sale proceeds

@@ -174,4 +174,4 @@ This contract is designed to integrate with healthcare systems by:
 
 ## License
 
-This contract is part of the Uzima healthcare platform and follows the project's licensing terms.
+This contract is part of the VitaStellar healthcare platform and follows the project's licensing terms.

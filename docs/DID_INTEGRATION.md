@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Uzima Healthcare Platform implements W3C Decentralized Identifiers (DIDs) and Verifiable Credentials to provide secure, interoperable, and user-controlled identity management for healthcare stakeholders.
+The VitaStellar Healthcare Platform implements W3C Decentralized Identifiers (DIDs) and Verifiable Credentials to provide secure, interoperable, and user-controlled identity management for healthcare stakeholders.
 
 This document describes the DID integration architecture, compliance with W3C standards, and usage guidelines for the healthcare ecosystem.
 
@@ -26,23 +26,23 @@ This document describes the DID integration architecture, compliance with W3C st
 ### Method Name
 
 ```
-did:stellar:uzima
+did:stellar:vitastellar
 ```
 
 ### DID Syntax
 
 ```
-did:stellar:uzima:<network>:<address-hash>
+did:stellar:vitastellar:<network>:<address-hash>
 ```
 
 **Components:**
-- `did:stellar:uzima` - Method prefix
+- `did:stellar:vitastellar` - Method prefix
 - `<network>` - Network identifier (`testnet`, `mainnet`, `futurenet`)
 - `<address-hash>` - SHA-256 hash of the Stellar address (first 16 hex chars)
 
 **Example:**
 ```
-did:stellar:uzima:testnet:a1b2c3d4e5f67890
+did:stellar:vitastellar:testnet:a1b2c3d4e5f67890
 ```
 
 ### CRUD Operations

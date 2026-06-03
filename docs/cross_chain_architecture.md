@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Uzima Cross-Chain Medical Records Interoperability system enables medical records stored on the Stellar blockchain to be securely accessed and managed across multiple blockchain networks while maintaining privacy, security, and regulatory compliance.
+The VitaStellar Cross-Chain Medical Records Interoperability system enables medical records stored on the Stellar blockchain to be securely accessed and managed across multiple blockchain networks while maintaining privacy, security, and regulatory compliance.
 
 ## Architecture Components
 

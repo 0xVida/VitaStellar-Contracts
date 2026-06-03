@@ -2,7 +2,7 @@
 
 use crate::utils::generate_test_address;
 use crate::utils::{HealthcareTeam, UserFixtureFactory};
-/// Integration testing framework for Uzima Contracts
+/// Integration testing framework for VitaStellar Contracts
 use soroban_sdk::{
     testutils::{Events, Ledger},
     Address, Env, IntoVal, String as SorobanString, Val, Vec,

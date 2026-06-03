@@ -487,14 +487,14 @@ The accompanying frontend code and off-chain indexer relied on event streams to 
 ### Tracking Information
 - All action items tracked in GitHub Issues under label `incident-pm-001`
 - Status updates required in weekly platform engineering standup
-- Action items tracked in project board: [Uzima Platform - Incident Recovery](https://github.com/Stellar-Uzima/Uzima-Contracts/projects/3)
+- Action items tracked in project board: [VitaStellar Platform - Incident Recovery](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/projects/3)
 
 ### Immediate Actions (Due within 48 hours)
 
 | ID | Action Item | Owner | Due Date | Priority | Status | GitHub Link |
 |---|---|---|---|---|---|---|
-| A1 | Deploy hotfix with event emission to testnet | James Rodriguez | 2025-03-15 18:00 | Critical | ✅ Done | [PR #892](https://github.com/Stellar-Uzima/Uzima-Contracts/pull/892) |
-| A2 | Create state verification script | Maria Patel | 2025-03-15 23:45 | Critical | ✅ Done | [PR #893](https://github.com/Stellar-Uzima/Uzima-Contracts/pull/893) |
+| A1 | Deploy hotfix with event emission to testnet | James Rodriguez | 2025-03-15 18:00 | Critical | ✅ Done | [PR #892](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/pull/892) |
+| A2 | Create state verification script | Maria Patel | 2025-03-15 23:45 | Critical | ✅ Done | [PR #893](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/pull/893) |
 | A3 | Send HIPAA breach notification | Dr. Sarah Chen | 2025-03-16 09:00 | Critical | ✅ Done | Internal doc |
 | A4 | Notify all 47 affected patients | Communications Team | 2025-03-16 17:00 | Critical | ✅ Done | Internal doc |
 | A5 | Review all access logs for unauthorized access | Hassan Ahmed | 2025-03-16 18:00 | High | ✅ Done | [Report: Access Log Analysis](https://internal-docs/access-logs-2025-03-15) |
@@ -503,11 +503,11 @@ The accompanying frontend code and off-chain indexer relied on event streams to 
 
 | ID | Action Item | Owner | Due Date | Priority | Status | GitHub Link |
 |---|---|---|---|---|---|---|
-| A6 | Implement monitoring alert for event emission gaps | Maria Patel | 2025-03-22 | High | 🔄 In Progress | [Issue #1142](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/1142) |
-| A7 | Create event emission test framework | Lisa Thompson | 2025-03-25 | High | 🔄 In Progress | [Issue #1143](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/1143) |
-| A8 | Update PR template with event emission checklist | Dr. Sarah Chen | 2025-03-20 | High | ⏳ Not Started | [Issue #1141](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/1141) |
-| A9 | Write event emission patterns documentation | Hassan Ahmed + James | 2025-04-01 | Medium | ⏳ Not Started | [Issue #1144](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/1144) |
-| A10 | Add pre-deployment invariant validation tool | Maria Patel + James | 2025-04-05 | Medium | ⏳ Not Started | [Issue #1145](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/1145) |
+| A6 | Implement monitoring alert for event emission gaps | Maria Patel | 2025-03-22 | High | 🔄 In Progress | [Issue #1142](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/1142) |
+| A7 | Create event emission test framework | Lisa Thompson | 2025-03-25 | High | 🔄 In Progress | [Issue #1143](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/1143) |
+| A8 | Update PR template with event emission checklist | Dr. Sarah Chen | 2025-03-20 | High | ⏳ Not Started | [Issue #1141](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/1141) |
+| A9 | Write event emission patterns documentation | Hassan Ahmed + James | 2025-04-01 | Medium | ⏳ Not Started | [Issue #1144](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/1144) |
+| A10 | Add pre-deployment invariant validation tool | Maria Patel + James | 2025-04-05 | Medium | ⏳ Not Started | [Issue #1145](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/1145) |
 
 ### Longer-term Actions (Due within 1 month)
 
@@ -595,10 +595,10 @@ The accompanying frontend code and off-chain indexer relied on event streams to 
 
 ### A. Supporting Documentation
 
-- **Incident Ticket**: [GitHub Issue #1040 - Medical Records Access Revocation Bug](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/1040)
-- **Deployment PR**: [PR #892 - Hotfix: Add Access Revocation Event Emission](https://github.com/Stellar-Uzima/Uzima-Contracts/pull/892)
+- **Incident Ticket**: [GitHub Issue #1040 - Medical Records Access Revocation Bug](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/1040)
+- **Deployment PR**: [PR #892 - Hotfix: Add Access Revocation Event Emission](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/pull/892)
 - **Related Code**: 
-  - [contracts/medical_records/src/lib.rs](https://github.com/Stellar-Uzima/Uzima-Contracts/blob/main/contracts/medical_records/src/lib.rs#L330-L380)
+  - [contracts/medical_records/src/lib.rs](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/blob/main/contracts/medical_records/src/lib.rs#L330-L380)
 - **Monitoring Dashboards**: [Testnet Access Control Dashboard](https://monitoring.internal/dashboards/testnet-access-control)
 - **Configuration**: [Testnet Deployment Config](./deployments/testnet_medical_records.json)
 - **Architecture Diagrams**: [Patient Consent Management Architecture](./docs/SYSTEM_ARCHITECTURE.md#patient-consent)
@@ -659,12 +659,12 @@ Transaction: AABBCCDDEEFF0011...
 
 | Role | Name | Email | Phone |
 |---|---|---|---|
-| Incident Commander | Dr. Sarah Chen | sarah.chen@stellar-uzima.io | +1-555-0100 |
-| Medical Records Contract Lead | James Rodriguez | james.rodriguez@stellar-uzima.io | +1-555-0101 |
-| DevOps / Infrastructure Lead | Maria Patel | maria.patel@stellar-uzima.io | +1-555-0102 |
-| Security Lead | Hassan Ahmed | hassan.ahmed@stellar-uzima.io | +1-555-0103 |
-| QA Lead | Lisa Thompson | lisa.thompson@stellar-uzima.io | +1-555-0104 |
-| Chief Compliance Officer | Dr. Michael Wong | michael.wong@stellar-uzima.io | +1-555-0200 |
+| Incident Commander | Dr. Sarah Chen | sarah.chen@vitastellar.io | +1-555-0100 |
+| Medical Records Contract Lead | James Rodriguez | james.rodriguez@vitastellar.io | +1-555-0101 |
+| DevOps / Infrastructure Lead | Maria Patel | maria.patel@vitastellar.io | +1-555-0102 |
+| Security Lead | Hassan Ahmed | hassan.ahmed@vitastellar.io | +1-555-0103 |
+| QA Lead | Lisa Thompson | lisa.thompson@vitastellar.io | +1-555-0104 |
+| Chief Compliance Officer | Dr. Michael Wong | michael.wong@vitastellar.io | +1-555-0200 |
 
 ---
 

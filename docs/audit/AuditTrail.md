@@ -1,7 +1,7 @@
 # On-Chain Audit Trail Contract Architecture
 
 ## Overview
-The Audit Trail contract provides an immutable, verifiable record of all contract interactions, state changes, and administrative actions within the Uzima-Contracts ecosystem.
+The Audit Trail contract provides an immutable, verifiable record of all contract interactions, state changes, and administrative actions within the VitaStellar-Contracts ecosystem.
 
 ## Performance
 - **Target Performance**: Audit operations complete within **60k gas** (resource equivalent).
@@ -34,4 +34,4 @@ Features an efficient query interface and analytical summary tools to generate c
 - **Integrity Proof**: Link to the rolling audit hash.
 
 ## Integration
-Uzima contracts should call the `record_event` function as part of sensitive operations to maintain a complete ecosystem-wide audit trail.
+VitaStellar contracts should call the `record_event` function as part of sensitive operations to maintain a complete ecosystem-wide audit trail.

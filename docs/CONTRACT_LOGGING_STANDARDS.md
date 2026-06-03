@@ -1,6 +1,6 @@
 # Contract Logging Standards
 
-This document defines the standardized logging patterns for all smart contracts in the Uzima Healthcare platform.
+This document defines the standardized logging patterns for all smart contracts in the VitaStellar Healthcare platform.
 
 ## Overview
 

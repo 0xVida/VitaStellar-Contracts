@@ -1,6 +1,6 @@
 # Regulatory Compliance Framework
 
-This document outlines how the Uzima Contracts implement features to comply with major healthcare regulations like HIPAA and GDPR.
+This document outlines how the VitaStellar Contracts implement features to comply with major healthcare regulations like HIPAA and GDPR.
 
 ## Framework Overview
 

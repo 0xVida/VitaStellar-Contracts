@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides comprehensive guidance for integrating with Uzima's healthcare system, including FHIR/HL7 compliance, EMR/EHR integration, and healthcare provider onboarding.
+This document provides comprehensive guidance for integrating with VitaStellar's healthcare system, including FHIR/HL7 compliance, EMR/EHR integration, and healthcare provider onboarding.
 
 ## Table of Contents
 
@@ -21,7 +21,7 @@ This document provides comprehensive guidance for integrating with Uzima's healt
 
 ### Overview
 
-Uzima supports HL7 FHIR (Fast Healthcare Interoperability Resources) standard for healthcare data exchange. This enables seamless integration with modern healthcare systems.
+VitaStellar supports HL7 FHIR (Fast Healthcare Interoperability Resources) standard for healthcare data exchange. This enables seamless integration with modern healthcare systems.
 
 ### Supported FHIR Resources
 
@@ -43,7 +43,7 @@ The FHIR Integration contract supports the following resource types:
 
 ### FHIR Coding Systems
 
-Uzima supports multiple healthcare coding systems for standardization:
+VitaStellar supports multiple healthcare coding systems for standardization:
 
 ```rust
 pub enum CodingSystem {
@@ -118,11 +118,11 @@ client.store_condition(&provider, &condition)?;
 
 ### Overview
 
-The EMR Integration contract manages integration between Uzima and Electronic Medical Record (EMR) and Electronic Health Record (EHR) systems.
+The EMR Integration contract manages integration between VitaStellar and Electronic Medical Record (EMR) and Electronic Health Record (EHR) systems.
 
 ### Supported EMR Systems
 
-Uzima supports integration with major EMR vendors:
+VitaStellar supports integration with major EMR vendors:
 
 - **Epic Systems**
 - **Cerner Corporation**
@@ -207,7 +207,7 @@ client.complete_onboarding(
 
 ### HL7 FHIR R4 Compliance
 
-Uzima implements HL7 FHIR Release 4 (R4) standard, which includes:
+VitaStellar implements HL7 FHIR Release 4 (R4) standard, which includes:
 
 - **RESTful API**: HTTP-based resource access
 - **FHIR XML & JSON**: Multiple serialization formats
@@ -217,7 +217,7 @@ Uzima implements HL7 FHIR Release 4 (R4) standard, which includes:
 
 ### HL7 v2 Support
 
-For legacy systems, Uzima supports HL7 v2.x messaging:
+For legacy systems, VitaStellar supports HL7 v2.x messaging:
 
 - **Message Types**: ADT, ORM, ORU, RGV, etc.
 - **Segment Types**: MSH, PID, OBX, OBR, etc.
@@ -238,7 +238,7 @@ Clinical Document Architecture (CDA) support for:
 
 ### Supported Conversions
 
-Uzima supports conversion between multiple healthcare data formats:
+VitaStellar supports conversion between multiple healthcare data formats:
 
 | Source | Target | Status |
 |--------|--------|--------|
@@ -254,7 +254,7 @@ Uzima supports conversion between multiple healthcare data formats:
 let mapping = DataMapping {
     source_system: "hospital-legacy-emr".to_string(),
     source_field: "DIAGNOSIS_CODE".to_string(),
-    target_system: "uzima-fhir".to_string(),
+    target_system: "vitastellar-fhir".to_string(),
     target_field: "Condition.code.coding.code".to_string(),
     transformation_rule: "ICD9 to ICD10 conversion with mapping table lookup".to_string(),
     status: "active".to_string(),
@@ -575,7 +575,7 @@ cargo test --package emr_integration --release
 
 ### HIPAA Compliance
 
-Uzima's healthcare integration includes:
+VitaStellar's healthcare integration includes:
 
 - **Data Encryption**: TLS 1.3 for all data in transit
 - **Access Controls**: Role-based access control (RBAC)

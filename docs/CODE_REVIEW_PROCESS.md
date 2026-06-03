@@ -1,6 +1,6 @@
 # Code Review Process
 
-This document defines the formal code review process for all changes to Uzima-Contracts.
+This document defines the formal code review process for all changes to VitaStellar-Contracts.
 
 ## Review Criteria
 
@@ -79,11 +79,11 @@ The following automations are configured:
 
 ```
 # Default reviewers for all files
-*                   @Stellar-Uzima/maintainers
+*                   @Stellar-VitaStellar/maintainers
 
 # Contract source code requires extra review
-/contracts/         @Stellar-Uzima/maintainers @Stellar-Uzima/security
-/.github/workflows/ @Stellar-Uzima/maintainers
+/contracts/         @Stellar-VitaStellar/maintainers @Stellar-VitaStellar/security
+/.github/workflows/ @Stellar-VitaStellar/maintainers
 ```
 
 ## Reviewer Training Materials

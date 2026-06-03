@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Comprehensive test automation script for Uzima Contracts
+# Comprehensive test automation script for VitaStellar Contracts
 # Runs all test suites with coverage reporting and quality gates
 
 set -e
@@ -22,7 +22,7 @@ COVERAGE_THRESHOLD=90
 mkdir -p "${TEST_RESULTS_DIR}"
 
 echo -e "${BLUE}================================================${NC}"
-echo -e "${BLUE}Uzima Contracts - Comprehensive Test Suite${NC}"
+echo -e "${BLUE}VitaStellar Contracts - Comprehensive Test Suite${NC}"
 echo -e "${BLUE}================================================${NC}"
 
 # Function to print section headers
@@ -133,7 +133,7 @@ fi
 # 9. Generate Test Report
 print_header "Generating Test Report"
 cat > "${TEST_RESULTS_DIR}/test_report.md" << EOF
-# Uzima Contracts - Test Report
+# VitaStellar Contracts - Test Report
 
 ## Test Summary
 

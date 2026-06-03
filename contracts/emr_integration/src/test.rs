@@ -84,7 +84,7 @@ fn parse_hl7_v2_message_extracts_header_fields() {
 
     let payload = String::from_str(
         &env,
-        "MSH|^~\\&|Uzima|Main|EMR|Receiving|20260328090000||ORU^R01|CTRL-99|P|2.5.1||||||UTF-8\rPID|1||PAT-001||DOE^JANE\rOBX|1|TX|NOTE||All good",
+        "MSH|^~\\&|VitaStellar|Main|EMR|Receiving|20260328090000||ORU^R01|CTRL-99|P|2.5.1||||||UTF-8\rPID|1||PAT-001||DOE^JANE\rOBX|1|TX|NOTE||All good",
     );
 
     let parsed = client.mock_all_auths().parse_message(
@@ -189,7 +189,7 @@ fn validates_messages_and_surfaces_issues() {
         &String::from_str(&env, "application/hl7-v2"),
         &String::from_str(
             &env,
-            "MSH|^~\\&|Uzima|Main|EMR|Receiving|20260328090000||ACK|CTRL-88|P|2.5.1",
+            "MSH|^~\\&|VitaStellar|Main|EMR|Receiving|20260328090000||ACK|CTRL-88|P|2.5.1",
         ),
     );
 

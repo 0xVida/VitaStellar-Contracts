@@ -1,4 +1,4 @@
-# Release validation script for Uzima-Contracts (PowerShell version)
+# Release validation script for VitaStellar-Contracts (PowerShell version)
 # Usage: .\scripts\validate_release.ps1 -Version "1.2.0" [-DryRun] [-SkipTests] [-SkipSecurity] [-Strict]
 
 param(

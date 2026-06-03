@@ -1,6 +1,6 @@
 # Automated Refactoring Suggestions
 
-This document describes the automated refactoring suggestion system for Uzima Contracts. It identifies common improvement opportunities across the codebase and provides guidance for addressing them.
+This document describes the automated refactoring suggestion system for VitaStellar Contracts. It identifies common improvement opportunities across the codebase and provides guidance for addressing them.
 
 ## Categories
 

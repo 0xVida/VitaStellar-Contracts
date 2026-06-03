@@ -1,6 +1,6 @@
 //! # Healthcare Load Test Scenarios
 //!
-//! Realistic load test scenarios for the Uzima healthcare platform.
+//! Realistic load test scenarios for the VitaStellar healthcare platform.
 //! These scenarios simulate real-world usage patterns to validate
 //! contract performance under load.
 //!

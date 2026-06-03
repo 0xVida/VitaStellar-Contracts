@@ -1,6 +1,6 @@
 # Security Best Practices Guide
 
-This guide covers secure smart contract development patterns for Uzima Contracts on Soroban/Stellar. Follow these practices when writing, reviewing, or auditing contracts.
+This guide covers secure smart contract development patterns for VitaStellar Contracts on Soroban/Stellar. Follow these practices when writing, reviewing, or auditing contracts.
 
 ---
 

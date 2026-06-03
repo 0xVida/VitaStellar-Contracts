@@ -141,7 +141,7 @@ sequenceDiagram
 graph TD
     %% Identity Sources
     subgraph "Stellar Identity (Primary)"
-        STELLAR_DID[DID: stellar:uzima:mainnet:address]
+        STELLAR_DID[DID: stellar:vitastellar:mainnet:address]
         STELLAR_CRED[Stellar Credentials]
         STELLAR_MFA[Stellar MFA]
     end

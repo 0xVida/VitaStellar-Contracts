@@ -4,7 +4,7 @@
 # DID Management Script
 # =============================================================================
 # This script provides commands for managing DIDs and verifiable credentials
-# on the Uzima identity registry.
+# on the VitaStellar identity registry.
 #
 # Usage: ./scripts/did_management.sh <command> [options]
 #
@@ -69,7 +69,7 @@ print_error() {
 }
 
 show_help() {
-    echo "DID Management Script for Uzima Healthcare Platform"
+    echo "DID Management Script for VitaStellar Healthcare Platform"
     echo ""
     echo "Usage: $0 <command> [options]"
     echo ""

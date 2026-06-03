@@ -1,5 +1,5 @@
 [package]
-name = "uzima-tests"
+name = "vitastellar-tests"
 version = "0.1.0"
 edition = "2021"
 publish = false
@@ -16,5 +16,5 @@ healthcare_payment = { path = "../contracts/healthcare_payment" }
 soroban-sdk = { workspace = true, features = ["testutils"] }
 
 [lib]
-name = "uzima_tests"
+name = "vitastellar_tests"
 path = "lib.rs"

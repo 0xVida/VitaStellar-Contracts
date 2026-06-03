@@ -1,7 +1,7 @@
 # Technical Debt Tracking System
 
 ## Overview
-This document serves as the central catalog and tracking system for technical debt across the Uzima-Contracts repository. It defines the process for identifying, assessing, prioritizing, and repaying technical debt.
+This document serves as the central catalog and tracking system for technical debt across the VitaStellar-Contracts repository. It defines the process for identifying, assessing, prioritizing, and repaying technical debt.
 
 ## Debt Catalog
 

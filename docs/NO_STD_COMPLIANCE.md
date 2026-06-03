@@ -2,7 +2,7 @@
 
 ## Overview
 
-All Uzima smart contracts must be `#![no_std]` compliant because Soroban contracts run in a WebAssembly environment that does not support the Rust standard library. This document outlines common pitfalls, verification steps, and best practices.
+All VitaStellar smart contracts must be `#![no_std]` compliant because Soroban contracts run in a WebAssembly environment that does not support the Rust standard library. This document outlines common pitfalls, verification steps, and best practices.
 
 ## Why no_std?
 

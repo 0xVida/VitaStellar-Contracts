@@ -1,7 +1,7 @@
 [book]
-title = "Stellar Uzima Contract Documentation"
-description = "Comprehensive documentation for the Stellar Uzima decentralized medical records smart contract ecosystem"
-authors = ["Stellar Uzima Contributors"]
+title = "VitaStellar Contract Documentation"
+description = "Comprehensive documentation for the VitaStellar decentralized medical records smart contract ecosystem"
+authors = ["VitaStellar Contributors"]
 language = "en"
 multilingual = false
 src = "."
@@ -14,10 +14,10 @@ create-missing = false
 theme = "default"
 default-theme = "light"
 preferred-dark-theme = "navy"
-git-repository-url = "https://github.com/Stellar-Uzima/Uzima-Contracts"
+git-repository-url = "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts"
 git-repository-icon = "fa-github"
-edit-url-template = "https://github.com/Stellar-Uzima/Uzima-Contracts/edit/main/docs/site/{path}"
-site-url = "/Uzima-Contracts/"
+edit-url-template = "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/edit/main/docs/site/{path}"
+site-url = "/VitaStellar-Contracts/"
 no-section-label = false
 
 [output.html.search]

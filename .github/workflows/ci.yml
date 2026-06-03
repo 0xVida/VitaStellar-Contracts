@@ -1,4 +1,4 @@
-# CI/CD Workflow for Uzima-Contracts
+# CI/CD Workflow for VitaStellar-Contracts
 # Verifies no_std compliance, runs tests, linting, and security checks
 
 name: CI

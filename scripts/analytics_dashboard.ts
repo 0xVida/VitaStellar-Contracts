@@ -224,7 +224,7 @@ async function collectAnalytics(sections: Set<Section>) {
 }
 
 function printTable(analytics: any) {
-  console.log('UZIMA ANALYTICS DASHBOARD');
+  console.log('VITASTELLAR ANALYTICS DASHBOARD');
   console.log('=========================');
 
   if (analytics.health) {

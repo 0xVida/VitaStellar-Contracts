@@ -5,8 +5,8 @@ Get up and running in under 5 minutes.
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Stellar-Uzima/Uzima-Contracts.git
-cd Uzima-Contracts
+git clone https://github.com/Stellar-VitaStellar/VitaStellar-Contracts.git
+cd VitaStellar-Contracts
 ```
 
 ## 2. Run Automated Setup

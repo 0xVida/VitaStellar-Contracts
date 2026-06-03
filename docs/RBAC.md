@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Role-Based Access Control (RBAC) Contract (#298) is a Soroban smart contract that provides a standardized, reusable system for managing roles and permissions across the Uzima healthcare ecosystem. This contract enforces access control by restricting functions and resources based on assigned roles.
+The Role-Based Access Control (RBAC) Contract (#298) is a Soroban smart contract that provides a standardized, reusable system for managing roles and permissions across the VitaStellar healthcare ecosystem. This contract enforces access control by restricting functions and resources based on assigned roles.
 
 ## Problem Statement
 

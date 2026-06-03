@@ -101,7 +101,7 @@ function parseContract(contractPath) {
 }
 
 function generateMarkdown(data) {
-  let md = `# Uzima Contracts — API Reference\n\n`;
+  let md = `# VitaStellar Contracts — API Reference\n\n`;
   md += `> Auto-generated from contract source code. Do not edit manually.\n\n`;
   md += `- **API version**: \`1.0.0\`\n`;
   md += `- **Generated**: \`${new Date().toISOString()}\`\n`;
@@ -180,7 +180,7 @@ function generateHTML(data) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Uzima Contracts — API Documentation Portal</title>
+  <title>VitaStellar Contracts — API Documentation Portal</title>
   <style>
     :root {
       --bg: #0d1117; --bg2: #161b22; --bg3: #21262d; --border: #30363d;
@@ -204,7 +204,7 @@ function generateHTML(data) {
 </head>
 <body>
   <header>
-    <div style="font-weight:bold;color:var(--accent)">⚕ Uzima Contracts</div>
+    <div style="font-weight:bold;color:var(--accent)">⚕ VitaStellar Contracts</div>
     <div style="font-size:12px;color:var(--text2)">Generated: ${timestamp}</div>
   </header>
   <nav>

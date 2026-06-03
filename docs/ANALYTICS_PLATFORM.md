@@ -1,8 +1,8 @@
-# Uzima Analytics Platform
+# VitaStellar Analytics Platform
 
 ## Overview
 
-This document describes the on-chain and off-chain components that make up the Uzima medical analytics platform, and how to run the provided tools to obtain privacy-preserving dashboards and reports.
+This document describes the on-chain and off-chain components that make up the VitaStellar medical analytics platform, and how to run the provided tools to obtain privacy-preserving dashboards and reports.
 
 The platform builds on existing smart contracts:
 

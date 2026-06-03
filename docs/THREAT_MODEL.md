@@ -1,6 +1,6 @@
-# Uzima Contracts — Threat Model (Cryptographic Security)
+# VitaStellar Contracts — Threat Model (Cryptographic Security)
 
-This threat model focuses on the cryptographic and privacy properties of the Uzima medical records system on Soroban. It complements `docs/CRYPTOGRAPHIC_SECURITY_MODEL.md`.
+This threat model focuses on the cryptographic and privacy properties of the VitaStellar medical records system on Soroban. It complements `docs/CRYPTOGRAPHIC_SECURITY_MODEL.md`.
 
 ## Assets
 - **Medical record content**: diagnosis/treatment notes, attachments, structured data.

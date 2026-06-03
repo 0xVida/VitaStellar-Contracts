@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides detailed information about integrating Electronic Medical Records (EMR) and Electronic Health Records (EHR) systems with Uzima's healthcare platform.
+This guide provides detailed information about integrating Electronic Medical Records (EMR) and Electronic Health Records (EHR) systems with VitaStellar's healthcare platform.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This guide provides detailed information about integrating Electronic Medical Re
 
 ### Supported EMR Vendors
 
-Uzima provides native support for the following EMR system vendors:
+VitaStellar provides native support for the following EMR system vendors:
 
 | Vendor | Product | Version | Status |
 |--------|---------|---------|--------|
@@ -49,7 +49,7 @@ Each EMR integration supports:
 
 ### Phase 1: EMR System Registration
 
-Register the EMR system in Uzima:
+Register the EMR system in VitaStellar:
 
 ```bash
 # Using the Soroban CLI
@@ -228,7 +228,7 @@ POST   /MedicationStatement             # Create medication
 
 ### Authentication
 
-Uzima supports multiple authentication methods:
+VitaStellar supports multiple authentication methods:
 
 ```rust
 pub enum AuthenticationMethod {
@@ -245,7 +245,7 @@ pub enum AuthenticationMethod {
 ```bash
 # Get patient with FHIR
 curl -X GET \
-  "https://fhir-api.uzima.health/Patient/patient-123" \
+  "https://fhir-api.vitastellar.health/Patient/patient-123" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Accept: application/fhir+json"
 ```
@@ -255,13 +255,13 @@ curl -X GET \
 ```bash
 # Store vital signs observation
 curl -X POST \
-  "https://fhir-api.uzima.health/Observation" \
+  "https://fhir-api.vitastellar.health/Observation" \
   -H "Authorization: Bearer $ACCESS_TOKEN" \
   -H "Content-Type: application/fhir+json" \
   -d '{
     "resourceType": "Observation",
     "identifier": [{
-      "system": "urn:system:uzima",
+      "system": "urn:system:vitastellar",
       "value": "obs-12345"
     }],
     "status": "final",
@@ -329,7 +329,7 @@ Comprehensive audit logging tracks:
 
 ### HIPAA Compliance
 
-Uzima maintains HIPAA compliance through:
+VitaStellar maintains HIPAA compliance through:
 
 1. **Business Associate Agreement (BAA)**
    - Required for all integrations
@@ -382,7 +382,7 @@ Discover providers and facilities:
 ```bash
 # Query for cardiology specialists
 curl -X GET \
-  "https://network.uzima.health/query?specialty=Cardiology&region=New%20York" \
+  "https://network.vitastellar.health/query?specialty=Cardiology&region=New%20York" \
   -H "Authorization: Bearer $ACCESS_TOKEN"
 
 # Response includes all certified providers with specialties
@@ -501,10 +501,10 @@ soroban contract invoke \
 
 For technical support:
 
-- **Email**: integration-support@uzima.health
-- **Phone**: +1-800-UZIMA-HELP
-- **Portal**: https://support.uzima.health
-- **Status Page**: https://status.uzima.health
+- **Email**: integration-support@vitastellar.health
+- **Phone**: +1-800-VITASTELLAR-HELP
+- **Portal**: https://support.vitastellar.health
+- **Status Page**: https://status.vitastellar.health
 
 ---
 

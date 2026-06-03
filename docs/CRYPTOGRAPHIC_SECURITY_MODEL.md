@@ -1,6 +1,6 @@
-# Uzima Contracts — Cryptographic Security Model
+# VitaStellar Contracts — Cryptographic Security Model
 
-This document describes the cryptographic security model implemented in this repository (Uzima medical records on Soroban), the on-chain/off-chain trust boundaries, and how the new cryptographic enhancement contracts are intended to be used together.
+This document describes the cryptographic security model implemented in this repository (VitaStellar medical records on Soroban), the on-chain/off-chain trust boundaries, and how the new cryptographic enhancement contracts are intended to be used together.
 
 ## Scope and goals
 

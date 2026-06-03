@@ -1,6 +1,6 @@
 # Soroban Auth Patterns
 
-Standard authorization patterns for all Uzima contracts. Every public function that mutates state **must** follow one of these patterns.
+Standard authorization patterns for all VitaStellar contracts. Every public function that mutates state **must** follow one of these patterns.
 
 ---
 

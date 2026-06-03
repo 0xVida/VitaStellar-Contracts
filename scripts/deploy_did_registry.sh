@@ -173,7 +173,7 @@ echo "  - Key Rotation (1h cooldown)"
 echo "  - Service Endpoint Management"
 echo ""
 echo "DID Method Format:"
-echo "  did:stellar:uzima:$NETWORK_ID:<address_hash>"
+echo "  did:stellar:vitastellar:$NETWORK_ID:<address_hash>"
 echo ""
 echo "Next Steps:"
 echo "  1. Create DIDs for healthcare providers"
@@ -198,7 +198,7 @@ cat > "$DEPLOY_INFO_FILE" << EOF
         "key_rotation": true,
         "service_endpoints": true
     },
-    "did_method": "did:stellar:uzima"
+    "did_method": "did:stellar:vitastellar"
 }
 EOF
 print_success "Deployment info saved to $DEPLOY_INFO_FILE"

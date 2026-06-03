@@ -17,7 +17,7 @@ use soroban_sdk::{
 use zk_verifier::{ZkVerifierContract, ZkVerifierContractClient};
 
 // test helpers
-use common::setup_uzima;
+use common::setup_vitastellar;
 
 fn append_bytes32(env: &Env, payload: &mut Bytes, value: &BytesN<32>) {
     payload.append(&Bytes::from_slice(env, &value.to_array()));
@@ -123,7 +123,7 @@ fn setup_zk_gate<'a>(
     )
 }
 
-fn add_base_record(env: &Env, t: &common::UzimaTest<'_>) -> u64 {
+fn add_base_record(env: &Env, t: &common::VitaStellarTest<'_>) -> u64 {
     t.client.add_record(
         &t.doctor,
         &t.patient,
@@ -140,7 +140,7 @@ fn add_base_record(env: &Env, t: &common::UzimaTest<'_>) -> u64 {
 #[allow(clippy::too_many_arguments)]
 fn build_public_inputs(
     env: &Env,
-    t: &common::UzimaTest<'_>,
+    t: &common::VitaStellarTest<'_>,
     issuer: &Address,
     credential_root: &BytesN<32>,
     record_id: u64,
@@ -194,7 +194,7 @@ fn attest(
 fn test_zk_success_path_and_access_gate() {
     let env = Env::default();
     env.mock_all_auths();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let (
         credential_registry_id,
@@ -243,7 +243,7 @@ fn test_zk_success_path_and_access_gate() {
 fn test_zk_failure_wrong_record_commitment() {
     let env = Env::default();
     env.mock_all_auths();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
     let (
         credential_registry_id,
         zk_verifier_id,
@@ -291,7 +291,7 @@ fn test_zk_failure_wrong_record_commitment() {
 fn test_zk_failure_wrong_credential_root() {
     let env = Env::default();
     env.mock_all_auths();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
     let (
         credential_registry_id,
         zk_verifier_id,
@@ -340,7 +340,7 @@ fn test_zk_failure_wrong_credential_root() {
 fn test_zk_failure_replay_nullifier_reused() {
     let env = Env::default();
     env.mock_all_auths();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
     let (
         credential_registry_id,
         zk_verifier_id,
@@ -422,7 +422,7 @@ fn test_zk_failure_replay_nullifier_reused() {
 fn test_zk_failure_malformed_proof() {
     let env = Env::default();
     env.mock_all_auths();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
     let (
         credential_registry_id,
         zk_verifier_id,
@@ -476,7 +476,7 @@ fn test_zk_failure_malformed_proof() {
 fn test_acl_and_zk_gate_interplay() {
     let env = Env::default();
     env.mock_all_auths();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
     let (
         credential_registry_id,
         zk_verifier_id,
@@ -571,7 +571,7 @@ fn test_audit_event_privacy_and_performance() {
         li.sequence_number = 99;
     });
 
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
     let (
         credential_registry_id,
         zk_verifier_id,

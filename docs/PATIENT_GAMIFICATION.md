@@ -709,4 +709,4 @@ For technical support or questions:
 
 ## License
 
-This project is part of the Stellar Uzima healthcare platform and follows the same licensing terms.
+This project is part of the VitaStellar healthcare platform and follows the same licensing terms.

@@ -1,7 +1,7 @@
 # Anti-Money Laundering (AML) Contract Architecture
 
 ## Overview
-The AML contract provides a comprehensive mechanism for transaction monitoring, risk assessment, and enforcement to ensure regulatory compliance across the Uzima-Contracts ecosystem.
+The AML contract provides a comprehensive mechanism for transaction monitoring, risk assessment, and enforcement to ensure regulatory compliance across the VitaStellar-Contracts ecosystem.
 
 ## Performance
 - **AML Monitoring Checks**: target < **120k gas** (resource equivalent).

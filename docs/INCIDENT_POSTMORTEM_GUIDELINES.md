@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides comprehensive guidelines for conducting effective incident postmortems for the Uzima-Contracts project. It includes best practices, team training resources, and step-by-step guidance on using the postmortem template.
+This document provides comprehensive guidelines for conducting effective incident postmortems for the VitaStellar-Contracts project. It includes best practices, team training resources, and step-by-step guidance on using the postmortem template.
 
 ---
 
@@ -640,7 +640,7 @@ Assumption: "If a transaction succeeds, it's fully processed"
    - Other regulations (CCPA, industry-specific)?
    - Does this trigger breach notification?
 
-**For Uzima healthcare context:**
+**For VitaStellar healthcare context:**
 - Always assume HIPAA applies
 - Medical records = PHI = automatic regulatory consideration
 - Breach notification rules: Notify HHS and individuals within 60 days

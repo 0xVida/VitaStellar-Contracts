@@ -1,5 +1,5 @@
 #!/bin/bash
-# Release announcement script for Uzima-Contracts
+# Release announcement script for VitaStellar-Contracts
 # Usage: ./scripts/announce_release.sh VERSION
 
 set -euo pipefail
@@ -55,7 +55,7 @@ send_slack_notification() {
     local payload=$(cat << EOF
 {
     "text": "$message",
-    "username": "Uzima-Contracts Release Bot",
+    "username": "VitaStellar-Contracts Release Bot",
     "icon_emoji": ":rocket:",
     "attachments": [
         {
@@ -73,7 +73,7 @@ send_slack_notification() {
                 },
                 {
                     "title": "GitHub Release",
-                    "value": "https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version",
+                    "value": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version",
                     "short": false
                 }
             ],
@@ -81,12 +81,12 @@ send_slack_notification() {
                 {
                     "type": "button",
                     "text": "View Release",
-                    "url": "https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version"
+                    "url": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version"
                 },
                 {
                     "type": "button",
                     "text": "View Changelog",
-                    "url": "https://github.com/Stellar-Uzima/Uzima-Contracts/blob/main/CHANGELOG.md"
+                    "url": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/blob/main/CHANGELOG.md"
                 }
             ]
         }
@@ -145,11 +145,11 @@ send_twitter_notification() {
     
     log_info "Sending Twitter notification..."
     
-    local tweet_text="🚀 Uzima-Contracts v$version released! 
+    local tweet_text="🚀 VitaStellar-Contracts v$version released! 
 
 New features, bug fixes, and improvements for decentralized medical records on Stellar.
 
-📋 Details: https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version
+📋 Details: https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version
 
 #Stellar #Blockchain #Healthcare #SmartContracts"
     
@@ -175,12 +175,12 @@ send_discord_notification() {
     
     local payload=$(cat << EOF
 {
-    "content": "🚀 **Uzima-Contracts v$version Released!**",
+    "content": "🚀 **VitaStellar-Contracts v$version Released!**",
     "embeds": [
         {
             "title": "Release v$version",
-            "description": "New version of Uzima-Contracts with enhanced features and improvements for decentralized medical records management on Stellar.",
-            "url": "https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version",
+            "description": "New version of VitaStellar-Contracts with enhanced features and improvements for decentralized medical records management on Stellar.",
+            "url": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version",
             "color": 3581519,
             "fields": [
                 {
@@ -190,12 +190,12 @@ send_discord_notification() {
                 },
                 {
                     "name": "GitHub Repository",
-                    "value": "[Stellar-Uzima/Uzima-Contracts](https://github.com/Stellar-Uzima/Uzima-Contracts)",
+                    "value": "[Stellar-VitaStellar/VitaStellar-Contracts](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts)",
                     "inline": true
                 }
             ],
             "footer": {
-                "text": "Stellar Uzima Project"
+                "text": "VitaStellar Project"
             }
         }
     ]
@@ -217,7 +217,7 @@ generate_announcement_message() {
     local version="$1"
     local changelog_file="$PROJECT_ROOT/CHANGELOG.md"
     
-    local message="🚀 Uzima-Contracts v$version released! 
+    local message="🚀 VitaStellar-Contracts v$version released! 
 
 📋 **Key Changes:**"
     
@@ -233,11 +233,11 @@ generate_announcement_message() {
     message+=$'\n\n'
     message+="🔗 **Links:**"
     message+=$'\n'
-    message+="• Release: https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version"
+    message+="• Release: https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version"
     message+=$'\n'
-    message+="• Changelog: https://github.com/Stellar-Uzima/Uzima-Contracts/blob/main/CHANGELOG.md"
+    message+="• Changelog: https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/blob/main/CHANGELOG.md"
     message+=$'\n'
-    message+="• Documentation: https://github.com/Stellar-Uzima/Uzima-Contracts#readme"
+    message+="• Documentation: https://github.com/Stellar-VitaStellar/VitaStellar-Contracts#readme"
     
     echo "$message"
 }
@@ -282,7 +282,7 @@ perform_announcements() {
 # Help function
 show_help() {
     cat << EOF
-Release announcement script for Uzima-Contracts
+Release announcement script for VitaStellar-Contracts
 
 Usage:
     $0 VERSION [OPTIONS]

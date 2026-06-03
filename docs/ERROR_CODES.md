@@ -1,11 +1,11 @@
 # Error Codes Reference
 
-> Comprehensive reference of all contract error codes across the Uzima Contracts ecosystem.
+> Comprehensive reference of all contract error codes across the VitaStellar Contracts ecosystem.
 > Auto-generated from contract source. Keep this file in sync with contract changes.
 
 ## Overview
 
-All Uzima contracts use numeric error codes organized by category:
+All VitaStellar contracts use numeric error codes organized by category:
 
 | Range | Category | Description |
 |-------|----------|-------------|

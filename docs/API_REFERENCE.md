@@ -1,4 +1,4 @@
-# Uzima Contracts — API Reference
+# VitaStellar Contracts — API Reference
 
 > Auto-generated from contract source code. Do not edit manually.
 
@@ -3772,7 +3772,7 @@ let env = Env::default();
 
     let payload = String::from_str(
         &env,
-        "MSH|^~\\&|Uzima|Main|EMR|Receiving|20260328090000||ORU^R01|CTRL-99|P|2.5.1||||||UTF-8\rPID|1||PAT-001||DOE^JANE\rOBX|1|TX|NOTE||All good",
+        "MSH|^~\\&|VitaStellar|Main|EMR|Receiving|20260328090000||ORU^R01|CTRL-99|P|2.5.1||||||UTF-8\rPID|1||PAT-001||DOE^JANE\rOBX|1|TX|NOTE||All good",
     );
 
     let parsed = client.mock_all_auths().parse_message(
@@ -4674,7 +4674,7 @@ let env = Env::default();
 
 | Function | Parameters | Returns | Description |
 |---|---|---|---|
-| `initialize` | `env: Env, admin: Address, rp_id_hash: BytesN<32>` | `Result<(), Error>` | Initializes the contract.  Must be called exactly once.  * `admin`      — address authorised to call administrative functions. * `rp_id_hash` — SHA-256 of the relying party identifier string (e.g., `sha256(b"uzima.health")`). |
+| `initialize` | `env: Env, admin: Address, rp_id_hash: BytesN<32>` | `Result<(), Error>` | Initializes the contract.  Must be called exactly once.  * `admin`      — address authorised to call administrative functions. * `rp_id_hash` — SHA-256 of the relying party identifier string (e.g., `sha256(b"vitastellar.health")`). |
 | `set_zk_verifier` | `env: Env, caller: Address, contract_id: Address` | `Result<(), Error>` | Configures the ZK verifier contract used for ES256 (P-256) assertions. |
 | `issue_registration_challenge` | `env: Env, user: Address` | `Result<BytesN<32>, Error>` | Issues a registration challenge for `user`.  The 32-byte challenge must be embedded in `clientDataJSON.challenge` during the FIDO2 attestation ceremony.  Valid for 5 minutes. |
 | `issue_auth_challenge` | `env: Env, user: Address` | `Result<BytesN<32>, Error>` | Issues a one-time authentication challenge for `user`. |
@@ -4971,7 +4971,7 @@ let env = Env::default();
 | `e` | — | — |
 | `g` | — | — |
 | `sha256` | — | — |
-| `uzima` | — | — |
+| `vitastellar` | — | — |
 | `health` | — | — |
 | `RpIdHash` | — | — |
 | `All` | — | — |

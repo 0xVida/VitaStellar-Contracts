@@ -1,4 +1,4 @@
-# Complete release test script for Uzima-Contracts (PowerShell)
+# Complete release test script for VitaStellar-Contracts (PowerShell)
 # Usage: .\scripts\complete_release_test.ps1 -Version "1.2.0"
 
 param(
@@ -188,7 +188,7 @@ function New-ImplementationSummary {
     Write-Info "Generating implementation summary..."
     
     $summary = @"
-# 🚀 Uzima-Contracts Release Implementation Summary
+# 🚀 VitaStellar-Contracts Release Implementation Summary
 
 ## ✅ Implementation Complete
 
@@ -327,7 +327,7 @@ STRICT=false
 SLACK_WEBHOOK_URL=https://hooks.slack.com/...
 DISCORD_WEBHOOK_URL=https://discord.com/api/webhooks/...
 SMTP_HOST=smtp.gmail.com
-SMTP_USER=release@uzima.com
+SMTP_USER=release@vitastellar.com
 SMTP_PASS=app_password
 
 # Publishing configuration
@@ -392,7 +392,7 @@ The implementation is complete and ready for production use:
 
 # Main execution
 try {
-    Write-Host "🚀 Uzima-Contracts Release Implementation Test" -ForegroundColor Cyan
+    Write-Host "🚀 VitaStellar-Contracts Release Implementation Test" -ForegroundColor Cyan
     Write-Host "=================================================" -ForegroundColor Cyan
     Write-Host ""
     
@@ -413,7 +413,7 @@ try {
         Write-Success "🎉 All tests passed! Implementation is ready for production."
         Write-Host ""
         Write-Info "Next steps:"
-        Write-Host "1. Review the pull request at: https://github.com/Ardecrownn/Uzima-Contracts/pull/new/feature/contract-versioning-release-process"
+        Write-Host "1. Review the pull request at: https://github.com/Ardecrownn/VitaStellar-Contracts/pull/new/feature/contract-versioning-release-process"
         Write-Host "2. Merge the PR when ready"
         Write-Host "3. Configure notification webhooks and API credentials"
         Write-Host "4. Test with a real release version"

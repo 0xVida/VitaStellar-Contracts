@@ -24,7 +24,7 @@ Examples:
 - `AND(role:doctor, department:oncology)`
 - `OR(role:doctor, role:emergency_responder)`
 - `2-of(project:a, project:b, project:c)`
-- `AND(region:KE, facility:uzima-main, valid_until:2026-12-31)`
+- `AND(region:KE, facility:vitastellar-main, valid_until:2026-12-31)`
 
 The contract stores:
 
@@ -51,7 +51,7 @@ This means the old permission flow still works, while the ABE layer adds fine-gr
 ## Time and Location Attributes
 
 - Time-based attributes are represented as issued attributes plus expiry windows.
-- Location-based access is modeled as trusted, signed attributes like `location:nairobi`, `region:KE`, or `facility:uzima-main`.
+- Location-based access is modeled as trusted, signed attributes like `location:nairobi`, `region:KE`, or `facility:vitastellar-main`.
 - The SDK only treats location-style attributes as active when they are marked `is_verified=true`.
 - No real-time GPS attestation is assumed.
 

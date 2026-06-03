@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# quickstart_dev.sh — Deploy core Uzima contracts to a local network with test data.
+# quickstart_dev.sh — Deploy core VitaStellar contracts to a local network with test data.
 #
 # Usage: ./scripts/quickstart_dev.sh [--skip-build]
 #

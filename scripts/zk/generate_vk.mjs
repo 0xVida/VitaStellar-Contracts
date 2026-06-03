@@ -14,7 +14,7 @@ function arg(name, fallback = undefined) {
 async function main() {
   const outDir = arg("--out-dir", "scripts/zk/artifacts");
   const outFile = arg("--out", "vk.json");
-  const circuit = arg("--circuit", "uzima_access_v1");
+  const circuit = arg("--circuit", "vitastellar_access_v1");
   const attestor = arg(
     "--attestor",
     "GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWHF",
@@ -27,7 +27,7 @@ async function main() {
   const metadataHash = toHex(sha256Hex(metadata));
 
   const artifact = {
-    schema: "uzima.zk.vk.v1",
+    schema: "vitastellar.zk.vk.v1",
     generated_at: new Date().toISOString(),
     circuit,
     vk_bytes_hex: `0x${vkRaw.toString("hex")}`,

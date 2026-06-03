@@ -1,6 +1,6 @@
 # Incident Postmortem Resources
 
-This directory contains comprehensive resources for conducting incident postmortems in the Uzima-Contracts project. These resources ensure we learn from incidents, prevent recurrence, and maintain a blameless, learning-focused culture.
+This directory contains comprehensive resources for conducting incident postmortems in the VitaStellar-Contracts project. These resources ensure we learn from incidents, prevent recurrence, and maintain a blameless, learning-focused culture.
 
 ---
 
@@ -48,7 +48,7 @@ This directory contains comprehensive resources for conducting incident postmort
 2. **Run meeting**: Follow [Role Definitions](./INCIDENT_POSTMORTEM_GUIDELINES.md#role-definitions) and [Timeline Guidance](./INCIDENT_POSTMORTEM_GUIDELINES.md#timeline---detailed-guidance)
 3. **After meeting**: Assign documentation owner to fill in [INCIDENT_POSTMORTEM_TEMPLATE.md](./INCIDENT_POSTMORTEM_TEMPLATE.md)
 4. **Manager action items**: Use [Prevention and Action Items](./INCIDENT_POSTMORTEM_GUIDELINES.md#prevention-and-action-items) guidance
-5. **Track to completion**: Use [project board](https://github.com/Stellar-Uzima/Uzima-Contracts/projects/3)
+5. **Track to completion**: Use [project board](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/projects/3)
 
 ---
 
@@ -396,7 +396,7 @@ GitHub issues with labels `postmortem` and `incident-<PM-ID>`. Add to project bo
 
 - **Slack**: #incidents channel
 - **GitHub**: Create issue on this repo
-- **Email**: platform-team@stellar-uzima.io
+- **Email**: platform-team@vitastellar.io
 - **Review**: Next scheduled review 2025-06-17
 
 ---

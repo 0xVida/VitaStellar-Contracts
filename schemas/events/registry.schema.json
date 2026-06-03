@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://stellar-uzima.dev/schemas/events/registry.schema.json",
-  "title": "Uzima Contracts Event Schema Registry",
+  "$id": "https://stellar-vitastellar.dev/schemas/events/registry.schema.json",
+  "title": "VitaStellar Contracts Event Schema Registry",
   "type": "object",
   "additionalProperties": false,
   "required": ["registry_version", "generated_at", "generator", "contracts"],

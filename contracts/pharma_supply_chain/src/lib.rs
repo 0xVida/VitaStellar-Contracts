@@ -552,7 +552,7 @@ mod test {
         let manufacturer_id = client.register_manufacturer(
             &admin,
             &manufacturer_operator,
-            &String::from_str(&env, "Uzima Pharma"),
+            &String::from_str(&env, "VitaStellar Pharma"),
             &String::from_str(&env, "FDA-001"),
         );
         let medication_id = client.register_medication(
@@ -668,7 +668,7 @@ mod test {
         let manufacturer_id = client.register_manufacturer(
             &admin,
             &manufacturer_operator,
-            &String::from_str(&env, "Uzima Pharma"),
+            &String::from_str(&env, "VitaStellar Pharma"),
             &String::from_str(&env, "EMA-001"),
         );
         let medication_id = client.register_medication(

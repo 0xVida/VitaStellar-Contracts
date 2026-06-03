@@ -228,7 +228,7 @@ The test suite covers:
 
 ## Integration Points
 
-The system integrates with existing Uzima contracts:
+The system integrates with existing VitaStellar contracts:
 - **Reputation Contract**: Base reputation scoring
 - **Provider Directory**: Provider profile information
 - **Credential Registry**: Credential verification infrastructure

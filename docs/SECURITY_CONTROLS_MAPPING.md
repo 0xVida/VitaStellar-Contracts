@@ -1,8 +1,8 @@
-# Security Controls Mapping for Uzima Contracts
+# Security Controls Mapping for VitaStellar Contracts
 
 ## Executive Summary
 
-This document provides a comprehensive mapping of security controls across all threat models for the Uzima medical records smart contract system. It consolidates controls from access control, state manipulation, resource exhaustion, cryptographic, and cross-contract interaction threat models into a unified framework for security assessment and operational monitoring.
+This document provides a comprehensive mapping of security controls across all threat models for the VitaStellar medical records smart contract system. It consolidates controls from access control, state manipulation, resource exhaustion, cryptographic, and cross-contract interaction threat models into a unified framework for security assessment and operational monitoring.
 
 ## Control Categories
 
@@ -331,7 +331,7 @@ This document provides a comprehensive mapping of security controls across all t
 
 ## Conclusion
 
-This comprehensive security controls mapping provides a defense-in-depth strategy for protecting the Uzima medical records system. By implementing controls across multiple layers and categories, the system can effectively mitigate threats while maintaining operational efficiency and regulatory compliance.
+This comprehensive security controls mapping provides a defense-in-depth strategy for protecting the VitaStellar medical records system. By implementing controls across multiple layers and categories, the system can effectively mitigate threats while maintaining operational efficiency and regulatory compliance.
 
 The mapping should be regularly reviewed and updated as:
 1. New threats emerge

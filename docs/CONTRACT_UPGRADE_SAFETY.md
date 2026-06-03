@@ -1,6 +1,6 @@
 # Contract Upgrade Safety
 
-This guide documents safe practices for upgrading and migrating Uzima smart contracts on Soroban.
+This guide documents safe practices for upgrading and migrating VitaStellar smart contracts on Soroban.
 
 ## Upgrade Patterns
 

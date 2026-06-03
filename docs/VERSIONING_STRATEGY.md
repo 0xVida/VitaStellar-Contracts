@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the versioning strategy for the Uzima-Contracts project, following Semantic Versioning (SemVer) to ensure clear, predictable version increments that communicate the nature of changes.
+This document outlines the versioning strategy for the VitaStellar-Contracts project, following Semantic Versioning (SemVer) to ensure clear, predictable version increments that communicate the nature of changes.
 
 ## Semantic Versioning (SemVer)
 

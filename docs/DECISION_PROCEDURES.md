@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document details the formal decision procedures for the Uzima Contract Governance System. It provides step-by-step processes for making decisions on contract upgrades, treasury management, emergency responses, and protocol changes.
+This document details the formal decision procedures for the VitaStellar Contract Governance System. It provides step-by-step processes for making decisions on contract upgrades, treasury management, emergency responses, and protocol changes.
 
 ## Table of Contents
 

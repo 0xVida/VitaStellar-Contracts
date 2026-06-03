@@ -1,8 +1,8 @@
-# Uzima Contract Governance Guide
+# VitaStellar Contract Governance Guide
 
 ## Overview
 
-This document provides comprehensive governance models for contract decisions within the Uzima healthcare blockchain ecosystem. It covers decision-making processes, upgrade procedures, emergency protocols, community participation mechanisms, and risk management frameworks.
+This document provides comprehensive governance models for contract decisions within the VitaStellar healthcare blockchain ecosystem. It covers decision-making processes, upgrade procedures, emergency protocols, community participation mechanisms, and risk management frameworks.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This document provides comprehensive governance models for contract decisions wi
 
 ### 1.1 Governance Architecture
 
-The Uzima DAO operates on a **hybrid governance model** designed to balance financial stake with active contribution, safeguarding the protocol through a judicial layer.
+The VitaStellar DAO operates on a **hybrid governance model** designed to balance financial stake with active contribution, safeguarding the protocol through a judicial layer.
 
 #### Core Components
 
@@ -105,7 +105,7 @@ pub fn get_power(env: &Env, cfg: &GovernorConfig, voter: &Address) -> i128 {
 
 ### 2.1 Upgrade Architecture
 
-The Uzima-Contracts repository implements a sophisticated upgradeability system designed for long-term maintainability, security, and zero-downtime updates. The system leverages Soroban's native `update_current_contract_wasm` capability.
+The VitaStellar-Contracts repository implements a sophisticated upgradeability system designed for long-term maintainability, security, and zero-downtime updates. The system leverages Soroban's native `update_current_contract_wasm` capability.
 
 ### 2.2 UpgradeManager Contract
 
@@ -759,7 +759,7 @@ pub fn delegate(
 
 ### Appendix C: Legal Disclaimers
 
-This governance guide is for informational purposes only and does not constitute legal advice. All participants should seek independent legal counsel. The Uzima DAO reserves the right to modify governance parameters as needed.
+This governance guide is for informational purposes only and does not constitute legal advice. All participants should seek independent legal counsel. The VitaStellar DAO reserves the right to modify governance parameters as needed.
 
 ### Appendix D: Version History
 

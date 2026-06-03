@@ -80,7 +80,7 @@ export function computePseudonym(requester, issuer, recordId) {
 export function computePublicInputsHash(publicInputs) {
   return toHex(
     sha256Hex({
-      domain: "uzima.zk.public_inputs.v1",
+      domain: "vitastellar.zk.public_inputs.v1",
       payload: normalize(publicInputs),
     }),
   );

@@ -2,11 +2,11 @@
 
 ## Purpose
 
-This document captures the core resource limits and constraints that apply to all Stellar Uzima Soroban contracts. It is intended to help developers keep contract code, storage, execution, and batch workflows within safe limits for Stellar/Soroban deployment, while also providing monitoring and performance guidance.
+This document captures the core resource limits and constraints that apply to all VitaStellar Soroban contracts. It is intended to help developers keep contract code, storage, execution, and batch workflows within safe limits for Stellar/Soroban deployment, while also providing monitoring and performance guidance.
 
 ## Scope
 
-Applies to all contracts in `contracts/*` and all deployments built using the Stellar Uzima workspace.
+Applies to all contracts in `contracts/*` and all deployments built using the VitaStellar workspace.
 
 ## 1. Core Soroban / Stellar Limits
 

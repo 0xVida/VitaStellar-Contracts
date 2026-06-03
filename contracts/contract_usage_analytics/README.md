@@ -1,6 +1,6 @@
 # Contract Usage Analytics
 
-A Soroban smart contract for tracking and analyzing on-chain contract usage patterns across the Uzima ecosystem.
+A Soroban smart contract for tracking and analyzing on-chain contract usage patterns across the VitaStellar ecosystem.
 
 ## Overview
 

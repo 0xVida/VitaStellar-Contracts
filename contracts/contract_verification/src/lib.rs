@@ -277,7 +277,7 @@ mod test {
         client.publish_metadata(
             &String::from_str(&env, "MedicalRecords"),
             &String::from_str(&env, "1.0.0"),
-            &String::from_str(&env, "https://github.com/Stellar-Uzima/Uzima-Contracts"),
+            &String::from_str(&env, "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts"),
             &String::from_str(&env, "MIT"),
             &String::from_str(&env, "Decentralised medical records on Stellar"),
         );

@@ -1,11 +1,11 @@
 //! # Role-Based Access Control (RBAC) Contract
 //!
-//! Provides role-based access control for Uzima healthcare contracts.
+//! Provides role-based access control for VitaStellar healthcare contracts.
 //! Supports multiple role types including Admin, Doctor, Patient, Staff,
 //! Insurer, Researcher, Auditor, and Service.
 //!
 //! ## Purpose
-//! Enables fine-grained access control across all Uzima contracts by assigning
+//! Enables fine-grained access control across all VitaStellar contracts by assigning
 //! roles to addresses. Roles determine what actions an address can perform.
 //!
 //! ## Key Dependencies

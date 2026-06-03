@@ -1,6 +1,6 @@
 # Contract Deployment Checklist
 
-Use this checklist before deploying any Uzima contract to a production or testnet environment. All items must be checked off and signed by the responsible team member before proceeding.
+Use this checklist before deploying any VitaStellar contract to a production or testnet environment. All items must be checked off and signed by the responsible team member before proceeding.
 
 ---
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This summary provides an overview of the governance documentation for the Uzima Contract system. All governance-related documents are located in the `docs/` directory.
+This summary provides an overview of the governance documentation for the VitaStellar Contract system. All governance-related documents are located in the `docs/` directory.
 
 ## Document Structure
 

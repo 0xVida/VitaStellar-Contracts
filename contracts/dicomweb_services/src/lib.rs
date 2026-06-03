@@ -1,7 +1,7 @@
 #![no_std]
 #![allow(clippy::too_many_arguments)]
 
-//! DICOMweb Services Integration for Uzima Contracts
+//! DICOMweb Services Integration for VitaStellar Contracts
 //!
 //! This contract implements QIDO-RS (Query), WADO-RS (Retrieve), and STOW-RS (Store)
 //! services for medical imaging interoperability according to DICOMweb standard 1.5+

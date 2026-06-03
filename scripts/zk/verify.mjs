@@ -45,7 +45,7 @@ async function main() {
     attestation.verified === true;
 
   const output = {
-    schema: "uzima.zk.verify.result.v1",
+    schema: "vitastellar.zk.verify.result.v1",
     proof_file: path.resolve(proofPath),
     valid: verdict,
     computed_public_inputs_hash: computedPublicInputsHash,

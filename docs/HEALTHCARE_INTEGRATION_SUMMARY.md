@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This document summarizes the comprehensive healthcare integration system implemented for Uzima contracts, including FHIR/HL7 standard compliance, EMR/EHR integration, provider onboarding, and healthcare network services.
+This document summarizes the comprehensive healthcare integration system implemented for VitaStellar contracts, including FHIR/HL7 standard compliance, EMR/EHR integration, provider onboarding, and healthcare network services.
 
 ## Implementation Completion Status
 

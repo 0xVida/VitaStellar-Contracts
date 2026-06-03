@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document establishes comprehensive input validation requirements for all smart contracts in the Uzima platform. Consistent validation across all contracts ensures data integrity, prevents invalid states, and improves security.
+This document establishes comprehensive input validation requirements for all smart contracts in the VitaStellar platform. Consistent validation across all contracts ensures data integrity, prevents invalid states, and improves security.
 
 ## Issue Reference
 
@@ -404,4 +404,4 @@ As new validation patterns emerge:
 
 ## Conclusion
 
-Consistent input validation is critical for contract security and reliability. By following these standards and using the shared `ValidationUtils` module, all contracts in the Uzima platform can maintain high-quality validation with minimal duplication.
+Consistent input validation is critical for contract security and reliability. By following these standards and using the shared `ValidationUtils` module, all contracts in the VitaStellar platform can maintain high-quality validation with minimal duplication.

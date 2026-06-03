@@ -1,6 +1,6 @@
 # Type Safety Guidelines for Soroban Smart Contracts
 
-This guide outlines best practices for maintaining type safety in the Uzima smart contracts ecosystem, focusing on Rust-based Soroban development. Ensuring strict type safety is critical for preventing vulnerabilities and ensuring contract reliability.
+This guide outlines best practices for maintaining type safety in the VitaStellar smart contracts ecosystem, focusing on Rust-based Soroban development. Ensuring strict type safety is critical for preventing vulnerabilities and ensuring contract reliability.
 
 ## 1. Type System Overview
 

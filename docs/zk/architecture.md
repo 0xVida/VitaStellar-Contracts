@@ -1,4 +1,4 @@
-# Uzima ZK Architecture
+# VitaStellar ZK Architecture
 
 ## Scope
 This design adds privacy-preserving access verification for `medical_records` using:

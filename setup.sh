@@ -17,8 +17,8 @@ NC='\033[0m' # No Color
 print_banner() {
     echo -e "${PURPLE}"
     echo "╔══════════════════════════════════════════════════════╗"
-    echo "║              Soroban Project Setup                   ║"
-    echo "║         Stellar Smart Contract Development           ║"
+    echo "║           VitaStellar Contracts Setup                ║"
+    echo "║      Decentralized Health & Wellness on Stellar       ║"
     echo "╚══════════════════════════════════════════════════════╝"
     echo -e "${NC}"
 }

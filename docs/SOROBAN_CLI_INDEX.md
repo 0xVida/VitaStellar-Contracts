@@ -1,6 +1,6 @@
 # Soroban CLI Documentation Index
 
-This index provides a comprehensive overview of all Soroban CLI documentation available in the Uzima-Contracts repository.
+This index provides a comprehensive overview of all Soroban CLI documentation available in the VitaStellar-Contracts repository.
 
 ## Documentation Structure
 
@@ -228,4 +228,4 @@ For additional help:
 
 ---
 
-This documentation suite provides comprehensive coverage of Soroban CLI usage for the Uzima-Contracts project. Each guide focuses on specific aspects while maintaining consistency in format and examples.
+This documentation suite provides comprehensive coverage of Soroban CLI usage for the VitaStellar-Contracts project. Each guide focuses on specific aspects while maintaining consistency in format and examples.

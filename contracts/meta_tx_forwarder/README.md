@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Meta-Transaction Forwarder enables gasless transactions for the Uzima healthcare platform, allowing patients and doctors to interact with smart contracts without needing to hold native tokens for gas fees. This significantly improves user experience for non-crypto-savvy users.
+The Meta-Transaction Forwarder enables gasless transactions for the VitaStellar healthcare platform, allowing patients and doctors to interact with smart contracts without needing to hold native tokens for gas fees. This significantly improves user experience for non-crypto-savvy users.
 
 ## Features
 
@@ -427,4 +427,4 @@ The forwarder emits events for:
 
 ## License
 
-MIT © 2025 Stellar Uzima Contributors
+MIT © 2025 VitaStellar Contributors

@@ -1,10 +1,10 @@
 #!/bin/bash
-# Naming Convention Check Script for Uzima Contracts
+# Naming Convention Check Script for VitaStellar Contracts
 # This script helps identify naming inconsistencies across the codebase
 
 set -e
 
-echo "🔍 Checking naming conventions across Uzima Contracts..."
+echo "🔍 Checking naming conventions across VitaStellar Contracts..."
 echo "======================================================"
 
 # Check for non-snake_case function names

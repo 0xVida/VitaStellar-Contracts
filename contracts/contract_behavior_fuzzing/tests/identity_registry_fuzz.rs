@@ -159,7 +159,7 @@ impl BehaviorHarness for IdentityHarness {
                     self.subject(*subject),
                     &Self::service_id(&self.env, *service_slot),
                     &support::s(&self.env, "LinkedDomains"),
-                    &support::s(&self.env, "https://uzima.test/service"),
+                    &support::s(&self.env, "https://vitastellar.test/service"),
                 );
 
                 if success {

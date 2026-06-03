@@ -181,7 +181,7 @@
 
 ## 8. Cross-Chain Resource Exhaustion
 
-**Threat**: Attackers exploit cross-chain mechanisms to consume resources on connected chains or the Uzima contract.
+**Threat**: Attackers exploit cross-chain mechanisms to consume resources on connected chains or the VitaStellar contract.
 
 **Attack Vectors**:
 - Spamming cross-chain record synchronization requests

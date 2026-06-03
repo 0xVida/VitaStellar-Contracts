@@ -2,8 +2,8 @@
 
 ## Getting Help
 
-- **GitHub Issues**: [Stellar-Uzima/Uzima-Contracts/issues](https://github.com/Stellar-Uzima/Uzima-Contracts/issues)
-- **GitHub Discussions**: [Stellar-Uzima/Uzima-Contracts/discussions](https://github.com/Stellar-Uzima/Uzima-Contracts/discussions)
+- **GitHub Issues**: [Stellar-VitaStellar/VitaStellar-Contracts/issues](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues)
+- **GitHub Discussions**: [Stellar-VitaStellar/VitaStellar-Contracts/discussions](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/discussions)
 - **Documentation**: This site and the [docs/](../../) directory
 
 ## Reporting Bugs

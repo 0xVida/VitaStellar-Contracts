@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide provides comprehensive strategies for optimizing Stellar Uzima contract performance, focusing on gas efficiency, storage optimization, and execution speed. Following these patterns will help you build scalable, cost-effective smart contracts.
+This guide provides comprehensive strategies for optimizing VitaStellar contract performance, focusing on gas efficiency, storage optimization, and execution speed. Following these patterns will help you build scalable, cost-effective smart contracts.
 
 ---
 

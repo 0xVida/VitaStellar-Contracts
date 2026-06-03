@@ -12,7 +12,7 @@ use soroban_sdk::testutils::{Address as _, Ledger};
 use soroban_sdk::{Bytes, BytesN, String, Vec};
 
 // test helpers
-use common::setup_uzima;
+use common::setup_vitastellar;
 
 fn make_envelopes(
     env: &soroban_sdk::Env,
@@ -45,7 +45,7 @@ fn make_envelopes(
 #[test]
 fn test_encrypted_record_requires_crypto_registry() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let mut tags = Vec::new(&env);
     tags.push_back(String::from_str(&env, "tag"));
@@ -72,7 +72,7 @@ fn test_encrypted_record_requires_crypto_registry() {
 #[test]
 fn test_plaintext_add_record_blocked_when_encryption_required() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     // Enable encryption-only mode.
     assert!(t.client.set_encryption_required(&t.admin1, &true));
@@ -95,7 +95,7 @@ fn test_plaintext_add_record_blocked_when_encryption_required() {
 #[test]
 fn test_encrypted_record_access_control_and_envelope_scoping() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     // Configure crypto registry (address is metadata hook; registry contract validates versions off-chain).
     let registry = soroban_sdk::Address::generate(&env);
@@ -150,7 +150,7 @@ fn test_encrypted_record_access_control_and_envelope_scoping() {
 #[test]
 fn test_envelope_update_and_crypto_audit_log() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let registry = soroban_sdk::Address::generate(&env);
     assert!(t.client.set_crypto_registry(&t.admin1, &registry));
@@ -201,7 +201,7 @@ fn test_envelope_update_and_crypto_audit_log() {
 #[test]
 fn test_advanced_encrypted_record_persists_abe_policy_metadata() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let registry = soroban_sdk::Address::generate(&env);
     assert!(t.client.set_crypto_registry(&t.admin1, &registry));
@@ -245,7 +245,7 @@ fn test_advanced_encrypted_record_persists_abe_policy_metadata() {
 #[test]
 fn test_crypto_config_threshold_proposal_flow() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let proposal_id = t.client.propose_crypto_config_update(
         &t.admin1,
@@ -293,7 +293,7 @@ fn test_crypto_config_threshold_proposal_flow() {
 #[test]
 fn test_require_pq_envelopes_gates_encrypted_records() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let registry = soroban_sdk::Address::generate(&env);
     assert!(t.client.set_crypto_registry(&t.admin1, &registry));
@@ -353,7 +353,7 @@ fn test_require_pq_envelopes_gates_encrypted_records() {
 #[test]
 fn test_quantum_threat_level_and_migration() {
     let env = soroban_sdk::Env::default();
-    let t = setup_uzima(&env);
+    let t = setup_vitastellar(&env);
 
     let registry = soroban_sdk::Address::generate(&env);
     assert!(t.client.set_crypto_registry(&t.admin1, &registry));

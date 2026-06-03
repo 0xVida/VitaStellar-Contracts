@@ -1,4 +1,4 @@
-# Uzima CLI Guide
+# VitaStellar CLI Guide
 
 This document supplements `README.md` with advanced CLI commands for transaction management, batch operations, debugging, and account utilities.
 

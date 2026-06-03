@@ -1337,7 +1337,7 @@ mod test {
         let connection_id = client.mock_all_auths().register_data_lake_connection(
             &admin,
             &String::from_str(&env, "aws_s3"),
-            &String::from_str(&env, "s3://uzima-analytics-prod"),
+            &String::from_str(&env, "s3://vitastellar-analytics-prod"),
             &String::from_str(&env, "spark"),
             &true,
             &true,

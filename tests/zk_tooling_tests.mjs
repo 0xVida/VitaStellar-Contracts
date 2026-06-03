@@ -25,7 +25,7 @@ async function main() {
     "--out",
     "vk.json",
     "--circuit",
-    "uzima_access_v1",
+    "vitastellar_access_v1",
   ]);
   assert.equal(vkRun.status, 0, vkRun.stderr);
 

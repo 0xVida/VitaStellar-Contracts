@@ -1,5 +1,5 @@
 #!/bin/bash
-# Release validation script for Uzima-Contracts
+# Release validation script for VitaStellar-Contracts
 # Usage: ./scripts/validate_release.sh VERSION [OPTIONS]
 
 set -euo pipefail
@@ -408,7 +408,7 @@ perform_validation() {
 # Help function
 show_help() {
     cat << EOF
-Release validation script for Uzima-Contracts
+Release validation script for VitaStellar-Contracts
 
 Usage:
     $0 VERSION [OPTIONS]

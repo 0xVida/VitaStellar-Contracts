@@ -3,7 +3,7 @@ use medical_records::{MedicalRecordsContract, MedicalRecordsContractClient, Role
 use soroban_sdk::{testutils::Address as _, Address, Env};
 
 // Added <'a> to struct definition
-pub struct UzimaTest<'a> {
+pub struct VitaStellarTest<'a> {
     pub client: MedicalRecordsContractClient<'a>, // Client needs lifetime
     pub admin1: Address,
     #[allow(dead_code)]
@@ -13,7 +13,7 @@ pub struct UzimaTest<'a> {
 }
 
 // Added <'a> to function and argument
-pub fn setup_uzima<'a>(env: &'a Env) -> UzimaTest<'a> {
+pub fn setup_vitastellar<'a>(env: &'a Env) -> VitaStellarTest<'a> {
     env.mock_all_auths();
 
     let admin1 = Address::generate(env);
@@ -41,7 +41,7 @@ pub fn setup_uzima<'a>(env: &'a Env) -> UzimaTest<'a> {
     // IMPORTANT FIX: Add the Doctor to the USERS map (required for link_did_to_user to find a profile)
     client.manage_user(&admin1, &doctor, &Role::Doctor);
 
-    UzimaTest {
+    VitaStellarTest {
         client,
         admin1,
         admin2,

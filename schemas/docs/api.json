@@ -12229,7 +12229,7 @@
       },
       {
         "name": "parse_hl7_v2_message_extracts_header_fields",
-        "code": "let env = Env::default();\n    let (client, _admin, _) = setup(&env);\n\n    let payload = String::from_str(\n        &env,\n        \"MSH|^~\\\\&|Uzima|Main|EMR|Receiving|20260328090000||ORU^R01|CTRL-99|P|2.5.1||||||UTF-8\\rPID|1||PAT-001||DOE^JANE\\rOBX|1|TX|NOTE||All good\",\n    );\n\n    let parsed = client.mock_all_auths().parse_message("
+        "code": "let env = Env::default();\n    let (client, _admin, _) = setup(&env);\n\n    let payload = String::from_str(\n        &env,\n        \"MSH|^~\\\\&|VitaStellar|Main|EMR|Receiving|20260328090000||ORU^R01|CTRL-99|P|2.5.1||||||UTF-8\\rPID|1||PAT-001||DOE^JANE\\rOBX|1|TX|NOTE||All good\",\n    );\n\n    let parsed = client.mock_all_auths().parse_message("
       },
       {
         "name": "supports_hl7_v3_and_cda_documents",
@@ -15325,7 +15325,7 @@
         "name": "initialize",
         "params": "env: Env, admin: Address, rp_id_hash: BytesN<32>",
         "returns": "Result<(), Error>",
-        "description": "Initializes the contract.  Must be called exactly once.  * `admin`      — address authorised to call administrative functions. * `rp_id_hash` — SHA-256 of the relying party identifier string (e.g., `sha256(b\"uzima.health\")`)."
+        "description": "Initializes the contract.  Must be called exactly once.  * `admin`      — address authorised to call administrative functions. * `rp_id_hash` — SHA-256 of the relying party identifier string (e.g., `sha256(b\"vitastellar.health\")`)."
       },
       {
         "name": "set_zk_verifier",
@@ -16633,7 +16633,7 @@
             "description": "—"
           },
           {
-            "variant": "uzima",
+            "variant": "vitastellar",
             "value": "—",
             "description": "—"
           },
@@ -22804,11 +22804,11 @@
       },
       {
         "name": "test_insurance_eligibility_claim_submission_and_eob_flow",
-        "code": "let (env, client, admin, provider, patient, _, _, _) = setup_env_and_clients();\n\n    let insurance_provider_id = client.register_insurance_provider(\n        &admin,\n        &String::from_str(&env, \"Uzima Insurance\"),\n        &String::from_str(&env, \"UZM001\"),\n        &true,\n        &true,\n    );"
+        "code": "let (env, client, admin, provider, patient, _, _, _) = setup_env_and_clients();\n\n    let insurance_provider_id = client.register_insurance_provider(\n        &admin,\n        &String::from_str(&env, \"VitaStellar Insurance\"),\n        &String::from_str(&env, \"UZM001\"),\n        &true,\n        &true,\n    );"
       },
       {
         "name": "test_insurance_claim_requires_matching_policy",
-        "code": "let (env, client, admin, provider, patient, _, _, _) = setup_env_and_clients();\n\n    let insurance_provider_id = client.register_insurance_provider(\n        &admin,\n        &String::from_str(&env, \"Uzima Insurance\"),\n        &String::from_str(&env, \"UZM002\"),\n        &true,\n        &true,\n    );"
+        "code": "let (env, client, admin, provider, patient, _, _, _) = setup_env_and_clients();\n\n    let insurance_provider_id = client.register_insurance_provider(\n        &admin,\n        &String::from_str(&env, \"VitaStellar Insurance\"),\n        &String::from_str(&env, \"UZM002\"),\n        &true,\n        &true,\n    );"
       }
     ]
   },

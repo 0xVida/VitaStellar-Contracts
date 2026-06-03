@@ -1,7 +1,7 @@
-# Uzima Smart Contract Upgradeability System
+# VitaStellar Smart Contract Upgradeability System
 
 ## Overview
-The Uzima-Contracts repository implements a sophisticated upgradeability system designed for long-term maintainability, security, and zero-downtime updates. The system leverages Soroban's native `update_current_contract_wasm` capability, wrapped in a governance-controlled framework.
+The VitaStellar-Contracts repository implements a sophisticated upgradeability system designed for long-term maintainability, security, and zero-downtime updates. The system leverages Soroban's native `update_current_contract_wasm` capability, wrapped in a governance-controlled framework.
 
 ## Architecture
 

@@ -3,7 +3,7 @@
 /**
  * Health Check Monitoring Script
  * 
- * Monitors Uzima contract health and sends alerts when thresholds are exceeded.
+ * Monitors VitaStellar contract health and sends alerts when thresholds are exceeded.
  * 
  * Usage:
  *   node monitor_health.js [--interval=60] [--contracts=contract1,contract2]
@@ -173,7 +173,7 @@ class HealthMonitor {
   displayStatus(results) {
     console.clear();
     console.log(`${COLORS.cyan}╔════════════════════════════════════════════════════════════╗${COLORS.reset}`);
-    console.log(`${COLORS.cyan}║          Uzima Contract Health Monitor                     ║${COLORS.reset}`);
+    console.log(`${COLORS.cyan}║          VitaStellar Contract Health Monitor                     ║${COLORS.reset}`);
     console.log(`${COLORS.cyan}╚════════════════════════════════════════════════════════════╝${COLORS.reset}`);
     console.log('');
     console.log(`Last Check: ${new Date().toLocaleString()}`);

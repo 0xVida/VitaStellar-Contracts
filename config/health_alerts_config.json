@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "description": "Health check alert configuration for Uzima contracts",
+  "description": "Health check alert configuration for VitaStellar contracts",
   "global_thresholds": {
     "success_rate": {
       "warning": 9800,

@@ -1,6 +1,6 @@
-# Stellar Uzima Contract Documentation
+# VitaStellar Contract Documentation
 
-Stellar Uzima is a decentralized smart contract system for secure, encrypted, and role-based management of medical records on the Stellar blockchain using Soroban and Rust.
+VitaStellar is a decentralized smart contract system for secure, encrypted, and role-based management of medical records on the Stellar blockchain using Soroban and Rust.
 
 ## What's in this documentation?
 
@@ -22,7 +22,7 @@ Stellar Uzima is a decentralized smart contract system for secure, encrypted, an
 
 ## Quick Links
 
-- [GitHub Repository](https://github.com/Stellar-Uzima/Uzima-Contracts)
+- [GitHub Repository](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts)
 - [Quick Start](getting-started/quick-start.md)
 - [Error Codes](api-reference/error-codes.md)
 - [Security Best Practices](guides/security.md)

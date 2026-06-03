@@ -1,7 +1,7 @@
 # Visual Documentation Index
 
 ## Overview
-This document provides a comprehensive index of all visual documentation diagrams for the Stellar Uzima healthcare blockchain system. Each diagram uses Mermaid.js syntax and can be rendered in any Markdown viewer that supports Mermaid.
+This document provides a comprehensive index of all visual documentation diagrams for the VitaStellar healthcare blockchain system. Each diagram uses Mermaid.js syntax and can be rendered in any Markdown viewer that supports Mermaid.
 
 ## Available Diagrams
 

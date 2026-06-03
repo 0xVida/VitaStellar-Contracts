@@ -2,7 +2,7 @@
 
 ## Overview
 
-The `governance_commons` library consolidates shared utilities and patterns for governance-related contracts in the Uzima platform. It provides:
+The `governance_commons` library consolidates shared utilities and patterns for governance-related contracts in the VitaStellar platform. It provides:
 
 - **Multi-Sig Module**: Consolidated approval logic for multi-signature operations
 - **Common Types**: Shared data structures for approvals, statuses, and configurations
@@ -379,4 +379,4 @@ governance_commons = { path = "../../../libs/governance_commons" }
 ## References
 
 - [Governance Architecture](../GOVERNANCE_ARCHITECTURE.md)
-- [Issue #769](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/769)
+- [Issue #769](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/769)

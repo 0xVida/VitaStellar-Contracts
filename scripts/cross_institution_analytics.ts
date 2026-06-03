@@ -269,7 +269,7 @@ async function collectCrossInstitutionAnalytics() {
 }
 
 function printTable(analytics: any) {
-  console.log('UZIMA CROSS-INSTITUTION ANALYTICS');
+  console.log('VITASTELLAR CROSS-INSTITUTION ANALYTICS');
   console.log('=================================');
 
   console.log('\n[Network]');

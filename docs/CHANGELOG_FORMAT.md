@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document defines the standardized changelog format for the Uzima-Contracts project, following [Keep a Changelog](https://keepachangelog.com/) guidelines with project-specific adaptations.
+This document defines the standardized changelog format for the VitaStellar-Contracts project, following [Keep a Changelog](https://keepachangelog.com/) guidelines with project-specific adaptations.
 
 ## Changelog Structure
 

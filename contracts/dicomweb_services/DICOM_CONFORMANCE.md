@@ -2,7 +2,7 @@
 
 ## Executive Summary
 
-The Uzima Contracts DICOMweb Services contract provides a compliant implementation of the DICOMweb standard (Version 1.5+) on the Stellar Soroban blockchain. This contract enables medical imaging interoperability through Query (QIDO-RS), Retrieval (WADO-RS), and Storage (STOW-RS) services.
+The VitaStellar Contracts DICOMweb Services contract provides a compliant implementation of the DICOMweb standard (Version 1.5+) on the Stellar Soroban blockchain. This contract enables medical imaging interoperability through Query (QIDO-RS), Retrieval (WADO-RS), and Storage (STOW-RS) services.
 
 ## Standards Compliance
 

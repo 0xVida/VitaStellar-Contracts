@@ -87,7 +87,7 @@ soroban contract invoke \
 
 ```bash
 curl -X POST \
-  "https://fhir-api.uzima.health/Observation" \
+  "https://fhir-api.vitastellar.health/Observation" \
   -H "Authorization: Bearer $TOKEN" \
   -H "Content-Type: application/fhir+json" \
   -d '{
@@ -309,7 +309,7 @@ cargo test --package fhir_integration --release
 
 ## Traditional Medicine Records
 
-Uzima supports structured records for traditional and indigenous healing practices alongside conventional medical records.
+VitaStellar supports structured records for traditional and indigenous healing practices alongside conventional medical records.
 
 ### `TraditionalMedicineMetadata` Schema
 

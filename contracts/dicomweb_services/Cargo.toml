@@ -2,7 +2,7 @@
 name = "dicomweb-services"
 version = "0.1.0"
 edition = "2021"
-description = "DICOMweb Services Integration for Uzima Contracts - QIDO-RS, WADO-RS, STOW-RS"
+description = "DICOMweb Services Integration for VitaStellar Contracts - QIDO-RS, WADO-RS, STOW-RS"
 
 [lib]
 crate-type = ["cdylib"]

@@ -1,8 +1,8 @@
-# Uzima Medical Records Event System
+# VitaStellar Medical Records Event System
 
 ## Overview
 
-The Uzima Medical Records contract implements a comprehensive event system for monitoring, auditing, and integration with external systems. This document provides detailed information about the event schema, implementation, and usage.
+The VitaStellar Medical Records contract implements a comprehensive event system for monitoring, auditing, and integration with external systems. This document provides detailed information about the event schema, implementation, and usage.
 
 ## Event Architecture
 
@@ -379,4 +379,4 @@ The event system is designed to be extensible:
 
 ## Conclusion
 
-The Uzima Medical Records event system provides comprehensive monitoring, auditing, and integration capabilities essential for healthcare applications. Its structured approach ensures consistency, efficiency, and compliance with healthcare requirements while maintaining gas efficiency and data privacy.
+The VitaStellar Medical Records event system provides comprehensive monitoring, auditing, and integration capabilities essential for healthcare applications. Its structured approach ensures consistency, efficiency, and compliance with healthcare requirements while maintaining gas efficiency and data privacy.

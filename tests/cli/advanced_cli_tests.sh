@@ -13,7 +13,7 @@ if [[ ! -f "$SCRIPT" ]]; then
 fi
 
 # 1) Help output
-if ! bash "$SCRIPT" --help | grep -q "Advanced Uzima CLI"; then
+if ! bash "$SCRIPT" --help | grep -q "Advanced VitaStellar CLI"; then
     echo "FAIL: help output missing" >&2
     exit 1
 fi

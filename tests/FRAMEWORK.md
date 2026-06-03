@@ -1,6 +1,6 @@
-# Uzima Contracts Integration Testing Framework
+# VitaStellar Contracts Integration Testing Framework
 
-This framework provides a unified and simplified environment for testing complex interactions between multiple Soroban contracts in the Uzima ecosystem.
+This framework provides a unified and simplified environment for testing complex interactions between multiple Soroban contracts in the VitaStellar ecosystem.
 
 ## Features
 
@@ -70,7 +70,7 @@ See `tests/integration/framework_tests.rs` for a complete demonstration of the f
 
 ## Shared Test Utilities
 
-The shared test utilities live under `tests/utils` and are exposed through `tests/utils/mod.rs`. These helpers are intended for contributors writing integrations and contract tests across the Uzima repo.
+The shared test utilities live under `tests/utils` and are exposed through `tests/utils/mod.rs`. These helpers are intended for contributors writing integrations and contract tests across the VitaStellar repo.
 
 - `tests/utils/contract_utils.rs` — `ContractSetup`, `assert_contract_error`, `assert_contract_success`, `to_soroban_string`, and timing helpers.
 - `tests/utils/integration_framework.rs` — `IntegrationTestEnv`, `MockService`, time control helpers, event assertions, and contract registration helpers.

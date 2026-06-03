@@ -487,7 +487,7 @@ mod tests {
             ("department", "oncology"),
             ("permission", "read_confidential"),
             ("region", "KE"),
-            ("facility", "uzima-main"),
+            ("facility", "vitastellar-main"),
             ("location", "nairobi"),
             ("valid_until", "2026-12-31"),
             ("project", "a"),

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Release notes generation script for Uzima-Contracts
+# Release notes generation script for VitaStellar-Contracts
 # Usage: ./scripts/generate_release_notes.sh [OPTIONS]
 
 set -euo pipefail
@@ -84,7 +84,7 @@ generate_header() {
     local release_date=$(date +%Y-%m-%d)
     
     cat << EOF
-# Release Notes: Uzima-Contracts v$version
+# Release Notes: VitaStellar-Contracts v$version
 
 **Release Date:** $release_date  
 **Version:** $version
@@ -93,7 +93,7 @@ generate_header() {
 
 ## 🚀 Overview
 
-This release includes significant improvements to the Uzima-Contracts project, focusing on contract versioning, release automation, and enhanced development workflows.
+This release includes significant improvements to the VitaStellar-Contracts project, focusing on contract versioning, release automation, and enhanced development workflows.
 
 EOF
 }
@@ -361,7 +361,7 @@ generate_upgrade_guide() {
     upgrade_section+="### Support\n\n"
     upgrade_section+="If you encounter issues during the upgrade:\n"
     upgrade_section+="- Check the [troubleshooting guide](docs/TROUBLESHOOTING.md)\n"
-    upgrade_section+="- Open an issue on [GitHub](https://github.com/Stellar-Uzima/Uzima-Contracts/issues)\n"
+    upgrade_section+="- Open an issue on [GitHub](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues)\n"
     upgrade_section+="- Contact the development team\n\n"
     
     echo -e "$upgrade_section"
@@ -373,16 +373,16 @@ generate_footer() {
     cat << EOF
 ## 🔗 Links
 
-- **GitHub Release:** https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version
-- **Documentation:** https://github.com/Stellar-Uzima/Uzima-Contracts/tree/main/docs
-- **API Reference:** https://github.com/Stellar-Uzima/Uzima-Contracts/blob/main/docs/API.md
-- **Changelog:** https://github.com/Stellar-Uzima/Uzima-Contracts/blob/main/CHANGELOG.md
+- **GitHub Release:** https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version
+- **Documentation:** https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/tree/main/docs
+- **API Reference:** https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/blob/main/docs/API.md
+- **Changelog:** https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/blob/main/CHANGELOG.md
 
 ## 📞 Support
 
-- **Issues:** https://github.com/Stellar-Uzima/Uzima-Contracts/issues
-- **Discussions:** https://github.com/Stellar-Uzima/Uzima-Contracts/discussions
-- **Security Issues:** security@stellar-uzima.org
+- **Issues:** https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues
+- **Discussions:** https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/discussions
+- **Security Issues:** security@stellar-vitastellar.org
 
 ---
 
@@ -499,7 +499,7 @@ validate_git_state() {
 # Help function
 show_help() {
     cat << EOF
-Release notes generation script for Uzima-Contracts
+Release notes generation script for VitaStellar-Contracts
 
 Usage:
     $0 [OPTIONS]

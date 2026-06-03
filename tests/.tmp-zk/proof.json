@@ -1,5 +1,5 @@
 {
-  "schema": "uzima.zk.proof.v1",
+  "schema": "vitastellar.zk.proof.v1",
   "generated_at": "2026-02-21T15:23:58.955Z",
   "purpose": "medical_record_access",
   "public_inputs": {

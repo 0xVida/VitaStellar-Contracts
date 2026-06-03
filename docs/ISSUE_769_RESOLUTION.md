@@ -291,7 +291,7 @@ if let Some(dispute_addr) = cfg.dispute_contract {
 - [Governance Architecture](../GOVERNANCE_ARCHITECTURE.md)
 - [Governance Refactoring Guide](../GOVERNANCE_REFACTORING_GUIDE.md)
 - [Integration Tests](../../contracts/governance_integration_tests/mod.rs)
-- [Original Issue #769](https://github.com/Stellar-Uzima/Uzima-Contracts/issues/769)
+- [Original Issue #769](https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/issues/769)
 
 ---
 

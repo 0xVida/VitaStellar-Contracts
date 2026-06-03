@@ -1,6 +1,6 @@
 # Comprehensive Soroban Network Configuration Management
 
-This document describes the enhanced network configuration management system implemented for Uzima-Contracts, providing robust, safe, and flexible network handling for Soroban smart contract deployment.
+This document describes the enhanced network configuration management system implemented for VitaStellar-Contracts, providing robust, safe, and flexible network handling for Soroban smart contract deployment.
 
 ## Overview
 

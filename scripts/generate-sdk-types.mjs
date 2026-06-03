@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * TypeScript Type Generator for Uzima SDK
+ * TypeScript Type Generator for VitaStellar SDK
  * 
  * This script generates TypeScript type definitions from contract schemas
  * and updates the mobile SDK type definitions.
@@ -248,9 +248,9 @@ function generateIndexFile() {
   const indexPath = path.join(path.dirname(OUTPUT_PATH), 'index.ts');
   
   const indexContent = `/**
- * Uzima SDK Core Types
+ * VitaStellar SDK Core Types
  * Generated from contract schemas for type safety and IDE support
- * @module @uzima/sdk-core
+ * @module @vitastellar/sdk-core
  */
 
 export * from './types';
@@ -265,7 +265,7 @@ export * from './types';
  */
 async function main() {
   try {
-    console.log('🚀 Uzima SDK Type Generator\n');
+    console.log('🚀 VitaStellar SDK Type Generator\n');
     console.log('This script regenerates TypeScript type definitions');
     console.log('from contract schemas and ensures type safety.\n');
     

@@ -1,4 +1,4 @@
-# Quick validation script for Uzima-Contracts release implementation
+# Quick validation script for VitaStellar-Contracts release implementation
 param(
     [Parameter(Mandatory=$true)]
     [string]$Version
@@ -7,7 +7,7 @@ param(
 $ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
 $ProjectRoot = Split-Path -Parent $ScriptDir
 
-Write-Host "🚀 Uzima-Contracts Release Implementation Validation" -ForegroundColor Cyan
+Write-Host "🚀 VitaStellar-Contracts Release Implementation Validation" -ForegroundColor Cyan
 Write-Host "==============================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -111,7 +111,7 @@ Write-Host "🎉 ALL VALIDATIONS PASSED!" -ForegroundColor Green
 Write-Host "📋 Issue #448 implementation is COMPLETE and READY!" -ForegroundColor Green
 Write-Host ""
 Write-Host "🚀 Ready for next steps:" -ForegroundColor Cyan
-Write-Host "1. Review pull request: https://github.com/Ardecrownn/Uzima-Contracts/pull/new/feature/contract-versioning-release-process" -ForegroundColor White
+Write-Host "1. Review pull request: https://github.com/Ardecrownn/VitaStellar-Contracts/pull/new/feature/contract-versioning-release-process" -ForegroundColor White
 Write-Host "2. Merge the PR when ready" -ForegroundColor White
 Write-Host "3. Configure notification webhooks" -ForegroundColor White
 Write-Host "4. Test with real release" -ForegroundColor White

@@ -2,7 +2,7 @@
 
 ## Overview
 
-The Uzima governance system consists of multiple specialized contracts, each with a single, well-defined responsibility. This document clarifies the separation of concerns and provides guidance on which mechanism to use for different scenarios.
+The VitaStellar governance system consists of multiple specialized contracts, each with a single, well-defined responsibility. This document clarifies the separation of concerns and provides guidance on which mechanism to use for different scenarios.
 
 ## Issue Reference
 

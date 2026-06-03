@@ -1,5 +1,5 @@
 #!/bin/bash
-# Release artifact publication script for Uzima-Contracts
+# Release artifact publication script for VitaStellar-Contracts
 # Usage: ./scripts/publish_artifacts.sh VERSION
 
 set -euo pipefail
@@ -41,7 +41,7 @@ log_error() {
 # Artifact functions
 create_artifact_archive() {
     local version="$1"
-    local archive_name="uzima-contracts-v$version"
+    local archive_name="vitastellar-contracts-v$version"
     local archive_dir="$PROJECT_ROOT/artifacts/$archive_name"
     
     log_info "Creating artifact archive for v$version..."
@@ -126,7 +126,7 @@ publish_to_github() {
     fi
     
     # Upload checksums
-    local checksums_file="$PROJECT_ROOT/artifacts/uzima-contracts-v$version/SHA256SUMS.txt"
+    local checksums_file="$PROJECT_ROOT/artifacts/vitastellar-contracts-v$version/SHA256SUMS.txt"
     if [[ -f "$checksums_file" ]]; then
         gh release upload "$tag" "$checksums_file" --clobber
         log_success "Uploaded checksums to GitHub"
@@ -181,7 +181,7 @@ publish_to_docker() {
     log_info "Publishing Docker images..."
     
     # Build Docker image
-    local image_name="stellar-uzima/uzima-contracts"
+    local image_name="stellar-vitastellar/vitastellar-contracts"
     local image_tag="$image_name:v$version"
     local latest_tag="$image_name:latest"
     
@@ -246,9 +246,9 @@ create_release_manifest() {
         "sha256": "$(sha256sum "$archive_path" | cut -d' ' -f1)"
     },
     "links": {
-        "github_release": "https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version",
-        "changelog": "https://github.com/Stellar-Uzima/Uzima-Contracts/blob/main/CHANGELOG.md",
-        "documentation": "https://github.com/Stellar-Uzima/Uzima-Contracts#readme"
+        "github_release": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version",
+        "changelog": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/blob/main/CHANGELOG.md",
+        "documentation": "https://github.com/Stellar-VitaStellar/VitaStellar-Contracts#readme"
     },
     "metadata": {
         "build_environment": "$(uname -a)",
@@ -293,7 +293,7 @@ verify_publication() {
     fi
     
     # Verify artifacts exist
-    local archive_path="$PROJECT_ROOT/artifacts/uzima-contracts-v$version.tar.gz"
+    local archive_path="$PROJECT_ROOT/artifacts/vitastellar-contracts-v$version.tar.gz"
     if [[ -f "$archive_path" ]]; then
         log_success "Artifact archive verified"
     else
@@ -302,7 +302,7 @@ verify_publication() {
     fi
     
     # Verify checksums
-    local checksums_file="$PROJECT_ROOT/artifacts/uzima-contracts-v$version/SHA256SUMS.txt"
+    local checksums_file="$PROJECT_ROOT/artifacts/vitastellar-contracts-v$version/SHA256SUMS.txt"
     if [[ -f "$checksums_file" ]]; then
         log_success "Checksums verified"
     else
@@ -340,7 +340,7 @@ perform_publication() {
 # Help function
 show_help() {
     cat << EOF
-Release artifact publication script for Uzima-Contracts
+Release artifact publication script for VitaStellar-Contracts
 
 Usage:
     $0 VERSION [OPTIONS]

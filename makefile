@@ -66,14 +66,14 @@ build: check-deps
 # Build optimized contracts for deployment
 # Excludes host-only tools and test packages that are not wasm-compatible:
 #   contract_optimizer  — uses tokio/reqwest/octocrab (native I/O only)
-#   uzima-tests         — soroban testutils are host-side only
+#   vitastellar-tests         — soroban testutils are host-side only
 #   interoperability_suite — test harness, no wasm output needed
 build-opt: check-deps
 	@echo "Building optimized contracts..."
 	cargo build --release --target wasm32-unknown-unknown \
 		--workspace \
 		--exclude contract_optimizer \
-		--exclude uzima-tests \
+		--exclude vitastellar-tests \
 		--exclude interoperability_suite
 	@echo "Contracts built successfully!"
 

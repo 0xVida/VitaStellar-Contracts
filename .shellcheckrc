@@ -1,4 +1,4 @@
-# ShellCheck configuration for Uzima-Contracts
+# ShellCheck configuration for VitaStellar-Contracts
 # See https://www.shellcheck.net/wiki/
 
 # Disable "Not following" warnings for sourced files that aren't tracked

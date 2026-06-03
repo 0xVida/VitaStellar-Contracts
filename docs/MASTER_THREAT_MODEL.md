@@ -1,18 +1,18 @@
-# Uzima Contracts — Master Threat Model
+# VitaStellar Contracts — Master Threat Model
 
 ## Document Overview
 
-This master threat model consolidates all security threat analyses for the Uzima medical records smart contract system deployed on Soroban. It provides a comprehensive view of threats across all critical contract operations, with detailed mitigation strategies and security control mappings.
+This master threat model consolidates all security threat analyses for the VitaStellar medical records smart contract system deployed on Soroban. It provides a comprehensive view of threats across all critical contract operations, with detailed mitigation strategies and security control mappings.
 
 **Version**: 1.0  
 **Last Updated**: 2026-04-25  
-**Scope**: All Uzima smart contracts (medical_records, crypto_registry, governor, rbac, and related contracts)  
+**Scope**: All VitaStellar smart contracts (medical_records, crypto_registry, governor, rbac, and related contracts)  
 **Blockchain**: Soroban (Stellar)  
 **Asset Classification**: Critical Healthcare Infrastructure
 
 ## Executive Summary
 
-The Uzima medical records system handles highly sensitive healthcare data requiring the highest levels of security. This threat model identifies and addresses risks across five major categories:
+The VitaStellar medical records system handles highly sensitive healthcare data requiring the highest levels of security. This threat model identifies and addresses risks across five major categories:
 
 1. **Access Control Threats**: Unauthorized access, privilege escalation, emergency access abuse
 2. **State Manipulation Threats**: Record tampering, configuration corruption, governance attacks
@@ -556,7 +556,7 @@ State Update → Event Emission → Cross-Chain Sync (if applicable)
 
 ## Conclusion and Strategic Outlook
 
-The Uzima medical records system faces significant security challenges given the sensitivity of healthcare data and the complexity of blockchain-based systems. This threat model provides a comprehensive framework for understanding and addressing these challenges.
+The VitaStellar medical records system faces significant security challenges given the sensitivity of healthcare data and the complexity of blockchain-based systems. This threat model provides a comprehensive framework for understanding and addressing these challenges.
 
 ### Key Findings
 
@@ -593,7 +593,7 @@ Each risk requires documented acceptance, mitigation plans, and regular review.
 5. **Develop Incident Response**: Create and test response procedures
 6. **Begin Quantum Migration**: Accelerate post-quantum cryptography adoption
 
-The security of the Uzima medical records system is foundational to its mission of providing secure, private healthcare data management. This threat model provides the roadmap for achieving and maintaining that security in an evolving threat landscape.
+The security of the VitaStellar medical records system is foundational to its mission of providing secure, private healthcare data management. This threat model provides the roadmap for achieving and maintaining that security in an evolving threat landscape.
 
 ---
 

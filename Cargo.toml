@@ -45,9 +45,9 @@ soroban-cli = "=21.7.7"
 [workspace.package]
 version = "0.1.0"
 edition = "2021"
-authors = ["Your Name <your.email@example.com>"]
+authors = ["VitaStellar Contributors <hello@vitastellar.io>"]
 license = "MIT"
-repository = "https://github.com/yourusername/soroban-project"
+repository = "https://github.com/VitaStellar/VitaStellar-Contracts"
 
 # Force compatible versions to fix stellar-xdr dependency conflicts
 # Note: arbitrary dependencies removed to fix workspace inheritance issues

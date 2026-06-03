@@ -1,6 +1,6 @@
-# Contributing to Uzima Contracts
+# Contributing to VitaStellar Contracts
 
-Thank you for your interest in contributing to Uzima Contracts! This document provides guidelines and standards for contributing to the project.
+Thank you for your interest in contributing to VitaStellar Contracts! This document provides guidelines and standards for contributing to the project.
 
 ## Development Workflow
 
@@ -81,7 +81,7 @@ Use the shared contract review checklist for all smart contract and contract-rel
 ```bash
 # Clone the repository
 git clone <repository-url>
-cd Uzima-Contracts
+cd VitaStellar-Contracts
 
 # Install dependencies
 cargo build

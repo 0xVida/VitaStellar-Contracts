@@ -2,7 +2,7 @@
 name = "iot_device_management"
 version = "0.1.0"
 edition = "2021"
-authors = ["Uzima Team"]
+authors = ["VitaStellar Team"]
 license = "MIT"
 
 [dependencies]

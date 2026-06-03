@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the implementation of fixes for potential Soroban serialization edge cases in the Uzima Contracts project. The changes address serialization failures with edge case data structures to prevent runtime panics, ensure data integrity, and avoid storage corruption.
+This document describes the implementation of fixes for potential Soroban serialization edge cases in the VitaStellar Contracts project. The changes address serialization failures with edge case data structures to prevent runtime panics, ensure data integrity, and avoid storage corruption.
 
 ## Problem Statement
 
@@ -184,4 +184,4 @@ env.storage().instance().set(&key, &data);
 
 This implementation provides comprehensive protection against serialization edge cases in Soroban contracts. The solution is minimal, focused, and maintains backward compatibility while adding robust error handling and validation.
 
-The changes ensure that the Uzima Contracts platform can handle edge cases gracefully, preventing runtime panics and ensuring data integrity across all contract operations.
+The changes ensure that the VitaStellar Contracts platform can handle edge cases gracefully, preventing runtime panics and ensuring data integrity across all contract operations.

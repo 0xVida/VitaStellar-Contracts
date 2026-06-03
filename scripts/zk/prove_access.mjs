@@ -102,7 +102,7 @@ async function main() {
   const proofHash = computeProofHash(proofHex);
 
   const artifact = {
-    schema: "uzima.zk.proof.v1",
+    schema: "vitastellar.zk.proof.v1",
     generated_at: new Date().toISOString(),
     purpose: "medical_record_access",
     public_inputs: publicInputs,

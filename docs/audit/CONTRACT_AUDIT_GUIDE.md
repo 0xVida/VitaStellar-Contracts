@@ -1,6 +1,6 @@
 # Contract Audit Preparation Guide
 
-This guide outlines the requirements and standards for preparing Uzima Smart Contracts for external security audits.
+This guide outlines the requirements and standards for preparing VitaStellar Smart Contracts for external security audits.
 
 ## 1. Pre-audit Checklist
 - [ ] Code freeze in effect (no logic changes during audit).

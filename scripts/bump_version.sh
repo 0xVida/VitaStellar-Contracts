@@ -1,5 +1,5 @@
 #!/bin/bash
-# Version bump script for Uzima-Contracts
+# Version bump script for VitaStellar-Contracts
 # Usage: ./scripts/bump_version.sh VERSION
 
 set -euo pipefail
@@ -247,7 +247,7 @@ commit_version_changes() {
 # Help function
 show_help() {
     cat << EOF
-Version bump script for Uzima-Contracts
+Version bump script for VitaStellar-Contracts
 
 Usage:
     $0 VERSION

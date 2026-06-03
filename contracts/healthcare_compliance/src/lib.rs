@@ -582,7 +582,7 @@ impl HealthcareComplianceContract {
             success: true,
             details,
             ip_address: String::from_str(&env, "127.0.0.1"), // Would be provided by client
-            user_agent: String::from_str(&env, "Uzima-Client/1.0"), // Would be provided by client
+            user_agent: String::from_str(&env, "VitaStellar-Client/1.0"), // Would be provided by client
             compliance_framework: framework,
             hipaa_category,
             gdpr_category,

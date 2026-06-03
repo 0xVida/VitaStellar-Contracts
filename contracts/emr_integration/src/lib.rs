@@ -1211,13 +1211,13 @@ impl EMRIntegrationContract {
                         env,
                         metadata,
                         "sending_application",
-                        "Uzima"
+                        "VitaStellar"
                     )),
                     Self::to_rust_string(&Self::metadata_or_default(
                         env,
                         metadata,
                         "sending_facility",
-                        "UZIMA_FAC"
+                        "VITASTELLAR_FAC"
                     )),
                     Self::to_rust_string(&Self::metadata_or_default(
                         env,
@@ -1319,7 +1319,7 @@ impl EMRIntegrationContract {
                         env,
                         metadata,
                         "document_title",
-                        "Uzima CDA Document"
+                        "VitaStellar CDA Document"
                     )),
                     Self::to_rust_string(&Self::metadata_or_default(
                         env,

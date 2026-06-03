@@ -1,5 +1,5 @@
 #!/bin/bash
-# Release automation script for Uzima-Contracts
+# Release automation script for VitaStellar-Contracts
 # Usage: ./scripts/release.sh VERSION [RELEASE_TYPE]
 
 set -euo pipefail
@@ -305,7 +305,7 @@ send_notifications() {
     
     # Send Slack notification (if configured)
     if command -v slack-cli &> /dev/null && [[ -n "${SLACK_WEBHOOK:-}" ]]; then
-        slack-cli send "🚀 Uzima-Contracts v$version released! Details: https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v$version" || true
+        slack-cli send "🚀 VitaStellar-Contracts v$version released! Details: https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v$version" || true
     fi
     
     # Send email notification (if configured)
@@ -369,7 +369,7 @@ perform_release() {
 # Help function
 show_help() {
     cat << EOF
-Release automation script for Uzima-Contracts
+Release automation script for VitaStellar-Contracts
 
 Usage:
     $0 VERSION [RELEASE_TYPE] [OPTIONS]

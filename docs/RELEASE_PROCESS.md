@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document outlines the comprehensive release process for the Uzima-Contracts project, ensuring consistent, reliable, and automated releases with proper versioning, changelog management, and deployment verification.
+This document outlines the comprehensive release process for the VitaStellar-Contracts project, ensuring consistent, reliable, and automated releases with proper versioning, changelog management, and deployment verification.
 
 ## Release Types
 
@@ -255,7 +255,7 @@ make publish
 
 ```bash
 # Slack notification
-./scripts/notify_slack.sh "Uzima-Contracts v1.2.0 released! 🚀 Features: patient consent management, performance improvements. Details: https://github.com/Stellar-Uzima/Uzima-Contracts/releases/tag/v1.2.0"
+./scripts/notify_slack.sh "VitaStellar-Contracts v1.2.0 released! 🚀 Features: patient consent management, performance improvements. Details: https://github.com/Stellar-VitaStellar/VitaStellar-Contracts/releases/tag/v1.2.0"
 
 # Email notification
 ./scripts/notify_email.sh --template release --version 1.2.0

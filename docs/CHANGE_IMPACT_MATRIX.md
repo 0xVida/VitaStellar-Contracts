@@ -1,6 +1,6 @@
 # Contract Change Impact Matrix
 
-This document provides tools and guidance for analyzing the impact of changes to Uzima Contracts before merging or deploying.
+This document provides tools and guidance for analyzing the impact of changes to VitaStellar Contracts before merging or deploying.
 
 ---
 

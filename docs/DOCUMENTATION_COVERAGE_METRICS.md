@@ -1,6 +1,6 @@
 # Contract Documentation Coverage Metrics
 
-This document describes how documentation coverage is measured, enforced, and reported for Uzima Contracts.
+This document describes how documentation coverage is measured, enforced, and reported for VitaStellar Contracts.
 
 ---
 

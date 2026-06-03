@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# crypto_audit.sh - Targeted cryptographic/security checks for Uzima contracts
+# crypto_audit.sh - Targeted cryptographic/security checks for VitaStellar contracts
 #
 # This script is intended for developer workstations/CI (it runs cargo commands).
 

@@ -1,6 +1,6 @@
 # Role-Based Access Control (RBAC) Contract
 
-A Soroban smart contract for standardized role and permission management across the Uzima healthcare ecosystem.
+A Soroban smart contract for standardized role and permission management across the VitaStellar healthcare ecosystem.
 
 ## Quick Start
 
