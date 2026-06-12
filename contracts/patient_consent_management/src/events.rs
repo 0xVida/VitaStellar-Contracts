@@ -55,3 +55,15 @@ pub fn publish_consent_expired(
         (patient, provider, timestamp),
     );
 }
+
+pub fn publish_health_check(
+    env: &Env,
+    status: &soroban_sdk::Symbol,
+    version: u32,
+    timestamp: u64,
+) {
+    env.events().publish(
+        (symbol_short!("CONSENT"), symbol_short!("HLTH")),
+        (status.clone(), version, timestamp),
+    );
+}

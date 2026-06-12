@@ -310,9 +310,30 @@ impl PatientConsentManagement {
     }
 
     /// On-chain health check endpoint.
-    /// Returns true if the contract is initialized and operational.
-    pub fn health_check(env: Env) -> bool {
-        env.storage().instance().has(&DataKey::Initialized)
+    /// Returns (status, version, timestamp) with standardized status values:
+    /// "OK", "PAUSED", "NOT_INIT", "DEGRADED".
+    pub fn health_check(env: Env) -> (Symbol, u32, u64) {
+        let initialized = env.storage().instance().has(&DataKey::Initialized);
+        let paused: bool = env
+            .storage()
+            .instance()
+            .get(&DataKey::Paused)
+            .unwrap_or(false);
+
+        let status = if !initialized {
+            symbol_short!("NOT_INIT")
+        } else if paused {
+            symbol_short!("PAUSED")
+        } else {
+            symbol_short!("OK")
+        };
+
+        let version: u32 = 1;
+        let timestamp = env.ledger().timestamp();
+
+        events::publish_health_check(&env, &status, version, timestamp);
+
+        (status, version, timestamp)
     }
 }
 
