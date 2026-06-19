@@ -1,4 +1,3 @@
-# Minimal CI for VitaStellar-Contracts
 # Verifies wasm32 builds, tests pass, code is formatted and coverage is reported
 
 name: CI
@@ -98,7 +97,7 @@ jobs:
           components: rustfmt
 
       - name: Check formatting
-        run: cargo fmt --all -- --check
+        run: cargo fmt -- --check
 
   error_codes:
     name: Error Codes Reference
