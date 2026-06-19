@@ -15,4 +15,8 @@ pub enum Error {
     GuideNotFound = 9,
     ChecklistNotFound = 10,
     InvalidChecklistIndex = 11,
+    DowngradeNotAllowed = 12,
+    TimeLockNotExpired = 13,
+    NoProposalPending = 14,
+    InvalidMinVersion = 15,
 }

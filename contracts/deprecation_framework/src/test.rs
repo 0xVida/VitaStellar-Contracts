@@ -1,7 +1,7 @@
 #[cfg(test)]
 mod tests {
     use crate::{DeprecationFramework, DeprecationFrameworkClient, DeprecationPhase};
-    use soroban_sdk::{testutils::Address as _, Address, Env, String, Vec};
+    use soroban_sdk::{testutils::Address as _, testutils::Ledger as _, Address, Env, String, Vec};
 
     #[test]
     fn test_initialize() {
@@ -279,5 +279,89 @@ mod tests {
         );
 
         assert!(client.is_deprecated(&contract_to_deprecate));
+    }
+
+    #[test]
+    fn test_pin_version_success() {
+        let env = Env::default();
+        env.mock_all_auths();
+
+        let admin = Address::generate(&env);
+        let contract_id = env.register_contract(None, DeprecationFramework);
+        let client = DeprecationFrameworkClient::new(&env, &contract_id);
+
+        client.initialize(&admin);
+
+        // Default min pinnable version is 1
+        assert_eq!(client.get_min_pinnable_version(), 1);
+
+        // Pin version 1 (same as floor)
+        client.pin_version(&admin, &1);
+        let current = client.get_current_pinned_version().unwrap();
+        assert_eq!(current.0, 1);
+
+        // Pin version 2 (higher than floor)
+        client.pin_version(&admin, &2);
+        let current = client.get_current_pinned_version().unwrap();
+        assert_eq!(current.0, 2);
+    }
+
+    #[test]
+    fn test_pin_version_downgrade_rejected() {
+        let env = Env::default();
+        env.mock_all_auths();
+
+        let admin = Address::generate(&env);
+        let contract_id = env.register_contract(None, DeprecationFramework);
+        let client = DeprecationFrameworkClient::new(&env, &contract_id);
+
+        client.initialize(&admin);
+
+        // Attempting to pin 0 (less than default floor 1) should be rejected
+        let result = client.try_pin_version(&admin, &0);
+        assert_eq!(result, Err(Ok(crate::errors::Error::DowngradeNotAllowed)));
+    }
+
+    #[test]
+    fn test_raise_min_version_flow() {
+        let env = Env::default();
+        env.mock_all_auths();
+
+        let admin = Address::generate(&env);
+        let contract_id = env.register_contract(None, DeprecationFramework);
+        let client = DeprecationFrameworkClient::new(&env, &contract_id);
+
+        client.initialize(&admin);
+
+        // Propose raising min pinnable version to 3
+        client.propose_raise_min_version(&admin, &3);
+
+        // Verify proposed details
+        let proposed = client.get_proposed_min_version().unwrap();
+        assert_eq!(proposed.0, 3);
+        assert_eq!(proposed.1, 86400); // 24 hours timelock
+
+        // Trying to execute raise immediately should fail
+        let result = client.try_raise_min_version(&admin);
+        assert_eq!(result, Err(Ok(crate::errors::Error::TimeLockNotExpired)));
+
+        // Advance ledger time by 24 hours (86400 seconds)
+        env.ledger().set_timestamp(86400);
+
+        // Now execute should succeed
+        client.raise_min_version(&admin);
+
+        // Verify new floor
+        assert_eq!(client.get_min_pinnable_version(), 3);
+        assert!(client.get_proposed_min_version().is_none());
+
+        // Pinning 2 (less than new floor 3) should now fail
+        let result = client.try_pin_version(&admin, &2);
+        assert_eq!(result, Err(Ok(crate::errors::Error::DowngradeNotAllowed)));
+
+        // Pinning 3 should succeed
+        client.pin_version(&admin, &3);
+        let current = client.get_current_pinned_version().unwrap();
+        assert_eq!(current.0, 3);
     }
 }

@@ -38,6 +38,14 @@ pub fn migrate_v1_to_v2(env: Env) {
 
 Deploy a new contract and update a router to point to it. The old contract remains for historical reads.
 
+### 4. Monotonic Version Pins (Upgrade Safety Floor)
+
+To prevent rollback/downgrade attacks (where a compromised admin pins to an older contract version to re-expose callers to known vulnerabilities, such as ZK simulator gaps), the system enforces a monotonic version-pin floor:
+- The `deprecation_framework` tracks a `min_pinnable_version` in instance storage (defaulting to 1).
+- Any attempt to call `pin_version` with a version lower than `min_pinnable_version` is rejected with a `DowngradeNotAllowed` error.
+- Elevating the `min_pinnable_version` requires proposing a new floor (`propose_raise_min_version`) and executing it (`raise_min_version`) after a mandatory 24-hour time-lock.
+
+
 ## State Migration Strategies
 
 | Strategy | Use Case | Risk |

@@ -3,6 +3,7 @@
 mod errors;
 mod events;
 mod types;
+mod version;
 
 #[cfg(test)]
 mod test;
@@ -306,6 +307,43 @@ impl DeprecationFramework {
         env.storage()
             .persistent()
             .has(&DataKey::DeprecatedContract(contract_id))
+    }
+
+    /// Pin a version
+    pub fn pin_version(env: Env, admin: Address, version: u32) -> Result<(), Error> {
+        access_utils::require_admin!(env, admin);
+        version::pin_version(env, version)
+    }
+
+    /// Propose raising the minimum pinnable version
+    pub fn propose_raise_min_version(
+        env: Env,
+        admin: Address,
+        new_min_version: u32,
+    ) -> Result<(), Error> {
+        access_utils::require_admin!(env, admin);
+        version::propose_raise_min_version(env, new_min_version)
+    }
+
+    /// Execute raising the minimum pinnable version after timelock
+    pub fn raise_min_version(env: Env, admin: Address) -> Result<(), Error> {
+        access_utils::require_admin!(env, admin);
+        version::raise_min_version(env)
+    }
+
+    /// Get the minimum pinnable version
+    pub fn get_min_pinnable_version(env: Env) -> u32 {
+        version::get_min_pinnable_version(env)
+    }
+
+    /// Get the currently pinned version, if any
+    pub fn get_current_pinned_version(env: Env) -> Option<(u32, u64)> {
+        version::get_current_pinned_version(env)
+    }
+
+    /// Get the proposed minimum version and its unlock timestamp, if any
+    pub fn get_proposed_min_version(env: Env) -> Option<(u32, u64)> {
+        version::get_proposed_min_version(env)
     }
 
     fn require_admin(env: &Env, actor: &Address) -> Result<(), Error> {

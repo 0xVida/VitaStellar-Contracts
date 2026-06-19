@@ -54,3 +54,31 @@ pub fn publish_checklist_item_completed(env: &Env, contract_id: &String, item_in
         (contract_id.clone(), item_index),
     );
 }
+
+pub fn publish_version_pinned(env: &Env, version: u32, timestamp: u64) {
+    env.events().publish(
+        (symbol_short!("DEPREC"), symbol_short!("PINNED")),
+        (version, timestamp),
+    );
+}
+
+pub fn publish_version_pin_rejected(env: &Env, version: u32, min_pinnable_version: u32) {
+    env.events().publish(
+        (symbol_short!("DEPREC"), symbol_short!("REJECTED")),
+        (version, min_pinnable_version),
+    );
+}
+
+pub fn publish_min_version_proposed(env: &Env, proposed_version: u32, unlock_time: u64) {
+    env.events().publish(
+        (symbol_short!("DEPREC"), symbol_short!("PROPOSED")),
+        (proposed_version, unlock_time),
+    );
+}
+
+pub fn publish_min_version_raised(env: &Env, new_min_version: u32) {
+    env.events().publish(
+        (symbol_short!("DEPREC"), symbol_short!("RAISED")),
+        new_min_version,
+    );
+}

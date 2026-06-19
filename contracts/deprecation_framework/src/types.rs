@@ -56,4 +56,8 @@ pub enum DataKey {
     RemovalChecklist(String),
     ChecklistItemComplete(String, u32),
     Communication(u64),
+    MinPinnableVersion,
+    ProposedMinVersion,
+    MinVersionUnlockTime,
+    CurrentPinnedVersion,
 }
